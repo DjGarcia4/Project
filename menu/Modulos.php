@@ -131,8 +131,7 @@
           <div class="accordions mb-100" id="accordion" role="tablist" aria-multiselectable="true">
             <!-- single accordian area -->
             <div class="panel single-accordion">
-              <h6><a role="button" class="" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse"
-                  data-parent="#accordion" href="#collapseOne">Acceso a reporte de tus empleados segun se presenten tus
+              <h6><a role="button" class="" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Acceso a reporte de tus empleados segun se presenten tus
                   necesidades:
                   <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
                   <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
@@ -147,8 +146,7 @@
             <!-- single accordian area -->
             <div class="panel single-accordion">
               <h6>
-                <a role="button" class="collapsed" aria-expanded="true" aria-controls="collapseTwo"
-                  data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">PLAN MULTIUSUARIO.
+                <a role="button" class="collapsed" aria-expanded="true" aria-controls="collapseTwo" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">PLAN MULTIUSUARIO.
                   <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
                   <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
                 </a>
@@ -165,8 +163,7 @@
             <div class="panel single-accordion">
               <h6>
 
-                <a role="button" aria-expanded="true" aria-controls="collapseThree" class="collapsed"
-                  data-parent="#accordion" data-toggle="collapse" href="#collapseThree"> CREACIÓN Y REGISTRO DE
+                <a role="button" aria-expanded="true" aria-controls="collapseThree" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseThree"> CREACIÓN Y REGISTRO DE
                   PLANILLAS
 
                   <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
@@ -188,17 +185,14 @@
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item">
 
-                <a class="nav-link" id="tab--1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1"
-                  aria-selected="false">MISIÓN</a>
+                <a class="nav-link" id="tab--1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="false">MISIÓN</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" id="tab--2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2"
-                  aria-selected="false">VISIÓN</a>
+                <a class="nav-link active" id="tab--2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">VISIÓN</a>
 
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="tab--3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3"
-                  aria-selected="true">OBJETIVO GENERAL</a>
+                <a class="nav-link" id="tab--3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="true">OBJETIVO GENERAL</a>
               </li>
             </ul>
 
@@ -374,11 +368,14 @@
               </div>
               <nav>
                 <ul class="useful-links">
-                  <li><a href="#">EMERSON ZAPATA</a></li>
-                  <li><a href="#">DENIS GARCIA</a></li>
-                  <li><a href="#">DULCE SANCHEZ</a></li>
-                  <li><a href="#">ONAN AGUILERA</a></li>
-                  <li><a href="#">DIEGO MOLINA</a></li>
+                  <li><a href="#" style="cursor:default;">EMERSON ZAPATA</a></li>
+                  <li><a href="#" style="cursor:default;">DENIS GARCIA</a></li>
+                  <li><a href="#" style="cursor:default;">DULCE SANCHEZ</a></li>
+                  <li><a href="#" style="cursor:default;">ONAN AGUILERA</a></li>
+                  <li><a href="#" style="cursor:default;">DIEGO MOLINA</a></li>
+                  <li><a href="#" style="cursor:default;">JUAN VILLATORO</a></li>
+                  <li><a href="#" style="cursor:default;">EDITH TOLEDO</a></li>
+                  <li><a href="#" style="cursor:default;">JOHNNY DEEP</a></li>
                 </ul>
               </nav>
             </div>
@@ -419,8 +416,7 @@
         <div class="">
           <div class="">
             <div>
-              <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+              <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
                 <defs>
                   <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
                 </defs>
@@ -432,9 +428,8 @@
                   <p>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     Copyright &copy;<script>
-                    document.write(new Date().getFullYear());
-                    </script> All rights reserved | This template is made with <i class="fa fa-heart-o"
-                      aria-hidden="true"></i> by <a href="" target="_blank">COPAP</a>
+                      document.write(new Date().getFullYear());
+                    </script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="" target="_blank">COPAP</a>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                   </p>
                 </g>
