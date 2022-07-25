@@ -16,6 +16,7 @@
 
   <!-- Core Stylesheet -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/style2.0.css">
 
 </head>
 
@@ -67,7 +68,7 @@
                   <a href="../index.php"><img src="../img/bg-img/logo.png" alt="" width="120"></a>
                 </div>
                 <ul>
-                  <li><a href="../menu/Modulos.php">Modulos o Servicios</a></li>
+                  <li><a href="../menu/Modulos.php">Módulos o Servicios</a></li>
                   </li>
                   <li><a href="../menu/about-us.php">Sobre Nosotros</a></li>
                   <li><a href="../menu/contact.php">Contactanos</a></li>
@@ -79,7 +80,7 @@
             <!-- Calling Info -->
             <div class="calling-info">
               <div class="call-center">
-                <a href="../Login/loginForm.php"><i class="icon-house"></i> <span>INICIAR SESION</span></a>
+                <a href="../Login/loginForm.php"><i class="icon-house"></i> <span>INICIAR SESIÓN</span></a>
               </div>
             </div>
           </nav>
@@ -106,13 +107,13 @@
         <div class="col-12">
           <div class="elements-title mb-50">
             <span>CONTROL DE PLANILLAS DE PAGO</span>
-            <h2>NUESTROS MODULOS</h2>
+            <h2>NUESTROS MÓDULOS</h2>
           </div>
           <!-- Selene Button -->
           <div class="academy-buttons-area mb-100">
             <a href="#" class="btn academy-btn m-2">CONTROL DE EMPLEADOS </a>
             <a href="#" class="btn academy-btn btn-2 m-2">REGISTRO DE HORARIOS</a>
-            <a href="#" class="btn academy-btn btn-3 m-2">CREACION DE PLANILLAS DE PAGO</a>
+            <a href="#" class="btn academy-btn btn-3 m-2">CREACIÓN DE PLANILLAS DE PAGO</a>
             <a href="#" class="btn academy-btn btn-4 m-2">REPORTES DE PLANILLA</a>
           </div>
         </div>
@@ -120,8 +121,8 @@
         <!-- ========== Progress Bars & Accordions ========== -->
         <div class="col-12">
           <div class="elements-title mb-50">
-            <span>DESCRIPCION</span>
-            <h2> DE NUESTROS MODULOS</h2>
+            <span>DESCRIPCIÓN</span>
+            <h2> DE NUESTROS MÓDULOS</h2>
           </div>
         </div>
 
@@ -130,12 +131,16 @@
           <div class="accordions mb-100" id="accordion" role="tablist" aria-multiselectable="true">
             <!-- single accordian area -->
             <div class="panel single-accordion">
-              <h6><a role="button" class="" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Acceso a reporte de tus empleados segun se presenten tus necesidades:
+              <h6><a role="button" class="" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Acceso a reporte de tus empleados segun se presenten tus
+                  necesidades:
                   <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
                   <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
                 </a></h6>
               <div id="collapseOne" class="accordion-content collapse show">
-                <h>Podras genrar reportes de tus empleados segun su jornada, horas trabajadas, salario, y cualquie clasificación que necesites incorporar.</h>
+
+                <h>Podrás generar reportes de tus empleados según su jornada, horas trabajadas, salario, y cualquier
+                  clasificación que necesites incorporar.</h>
+
               </div>
             </div>
             <!-- single accordian area -->
@@ -147,19 +152,27 @@
                 </a>
               </h6>
               <div id="collapseTwo" class="accordion-content collapse">
-                <h>Si no eres el unico administrador de tu empresa tambien tenemos una propuesta para ti. Con nuestro plan multiusuario podras crear tres perfiles en nuestro sistema y asignar los modulos de acceso segun el rol de cada usuario.</h>
+
+                <h>Si no eres el único administrador de tu empresa también tenemos una propuesta para ti. Con nuestro
+                  plan multiusuario podrás crear tres perfiles en nuestro sistema y asignar los módulos de acceso según
+                  el rol de cada usuario.</h>
+
               </div>
             </div>
             <!-- single accordian area -->
             <div class="panel single-accordion">
               <h6>
-                <a role="button" aria-expanded="true" aria-controls="collapseThree" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseThree"> CREACION Y REGISTRO DE PLANILLAS
+
+                <a role="button" aria-expanded="true" aria-controls="collapseThree" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseThree"> CREACIÓN Y REGISTRO DE
+                  PLANILLAS
+
                   <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
                   <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
                 </a>
               </h6>
               <div id="collapseThree" class="accordion-content collapse">
-                <h>Ya no tienes que preocuparte por extensos papeleos ni las tendiosas hojas de calculo y mucho menos por respaldar tu información. COPAP hace eso y mucho mas por ti</h>
+                <h>Ya no tienes que preocuparte por extensos papeleos ni las tendiosas hojas de calculo y mucho menos
+                  por respaldar tu información. COPAP hace eso y mucho mas por ti</h>
               </div>
             </div>
           </div>
@@ -171,10 +184,12 @@
           <div class="academy-tabs-content">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item">
-                <a class="nav-link" id="tab--1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="false">MISION</a>
+
+                <a class="nav-link" id="tab--1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="false">MISIÓN</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" id="tab--2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">VISION</a>
+                <a class="nav-link active" id="tab--2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">VISIÓN</a>
+
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="tab--3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="true">OBJETIVO GENERAL</a>
@@ -186,7 +201,8 @@
                 <div class="academy-tab-content">
                   <!-- Tab Text -->
                   <div class="academy-tab-text">
-                    <h>Un texto narrativo es un relato en el que se cuenta una historia real o ficticia que ocurre en un lugar y tiempo concretos. En la vida cotidiana, la narración .</h>
+                    <h>Un texto narrativo es un relato en el que se cuenta una historia real o ficticia que ocurre en un
+                      lugar y tiempo concretos. En la vida cotidiana, la narración .</h>
                   </div>
                 </div>
               </div>
@@ -194,7 +210,8 @@
                 <div class="academy-tab-content">
                   <!-- Tab Text -->
                   <div class="academy-tab-text">
-                    <p>Un texto narrativo es un relato en el que se cuenta una historia real o ficticia que ocurre en un lugar y tiempo concretos. En la vida cotidiana, la narración .</p>
+                    <p>Un texto narrativo es un relato en el que se cuenta una historia real o ficticia que ocurre en un
+                      lugar y tiempo concretos. En la vida cotidiana, la narración .</p>
                   </div>
                 </div>
               </div>
@@ -202,7 +219,8 @@
                 <div class="academy-tab-content">
                   <!-- Tab Text -->
                   <div class="academy-tab-text">
-                    <p>Un texto narrativo es un relato en el que se cuenta una historia real o ficticia que ocurre en un lugar y tiempo concretos. En la vida cotidiana, la narración .</p>
+                    <p>Un texto narrativo es un relato en el que se cuenta una historia real o ficticia que ocurre en un
+                      lugar y tiempo concretos. En la vida cotidiana, la narración .</p>
                   </div>
                 </div>
               </div>
@@ -294,7 +312,7 @@
                 </div>
                 <div class="course-content">
                   <h4>SEGURIDAD</h4>
-                  <p>&nbsp;&nbsp;INTEGRIDAD DE TU INFORMACION</p>
+                  <p>&nbsp;&nbsp;INTEGRIDAD DE TU INFORMACIÓN</p>
                 </div>
               </div>
             </div>
@@ -307,7 +325,7 @@
                 </div>
                 <div class="course-content">
                   <h4>ACCESO</h4>
-                  <p>&nbsp;&nbsp;SEGURO, FACIL Y RAPIDO</p>
+                  <p>&nbsp;&nbsp;SEGURO, FÁCIL Y RÁPIDO</p>
                 </div>
               </div>
             </div>
@@ -328,10 +346,12 @@
           <!-- Footer Widget Area -->
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="footer-widget mb-100">
-              <div class="widget-title">
-                <a href="#"><img src="../img/bg-img/logo.png" alt=""></a>
+              <div style="text-align: center;" class="widget-title">
+                <!-- <a href="#"><img src="img/bg-img/logo.png" alt=""></a> -->
+                <img src="../img/QR.png" alt="" width="200px">
+                <p>¡ESCANEAME PARA MÁS INFORMACIÓN!</p>
               </div>
-              <p>CONTROL DE PLANILAS DE PAGO COPAP</p>
+              <p>Redes Sociales</p>
               <div class="footer-social-info">
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
@@ -348,11 +368,14 @@
               </div>
               <nav>
                 <ul class="useful-links">
-                  <li><a href="#">EMERSON ZAPATA</a></li>
-                  <li><a href="#">DENIS GARCIA</a></li>
-                  <li><a href="#">DULCE SANCHEZ</a></li>
-                  <li><a href="#">ONAN AGUILERA</a></li>
-                  <li><a href="#">DIEGO MOLINA</a></li>
+                  <li><a href="#" style="cursor:default;">EMERSON ZAPATA</a></li>
+                  <li><a href="#" style="cursor:default;">DENIS GARCIA</a></li>
+                  <li><a href="#" style="cursor:default;">DULCE SANCHEZ</a></li>
+                  <li><a href="#" style="cursor:default;">ONAN AGUILERA</a></li>
+                  <li><a href="#" style="cursor:default;">DIEGO MOLINA</a></li>
+                  <li><a href="#" style="cursor:default;">JUAN VILLATORO</a></li>
+                  <li><a href="#" style="cursor:default;">EDITH TOLEDO</a></li>
+                  <li><a href="#" style="cursor:default;">JOHNNY DEEP</a></li>
                 </ul>
               </nav>
             </div>
@@ -362,14 +385,6 @@
             <div class="footer-widget mb-100">
               <div class="widget-title">
 
-              </div>
-              <div class="gallery-list d-flex justify-content-between flex-wrap">
-                <a href="../img/bg-img/control1.jpg" class="gallery-img" title="Gallery Image 1"><img src="../img/bg-img/control1.jpg" alt=""></a>
-                <a href="../img/bg-img/control2.jpg" class="gallery-img" title="Gallery Image 2"><img src="../img/bg-img/control2.jpg" alt=""></a>
-                <a href="../img/bg-img/control3.jpg" class="gallery-img" title="Gallery Image 3"><img src="../img/bg-img/control3.jpg" alt=""></a>
-                <a href="../img/bg-img/control4.jpg" class="gallery-img" title="Gallery Image 4"><img src="../img/bg-img/control4.jpg" alt=""></a>
-                <a href="../img/bg-img/control5.jpg" class="gallery-img" title="Gallery Image 5"><img src="../img/bg-img/control5.jpg" alt=""></a>
-                <a href="../img/bg-img/control6.jpg" class="gallery-img" title="Gallery Image 6"><img src="../img/bg-img/control6.jpg" alt=""></a>
               </div>
             </div>
           </div>
@@ -389,7 +404,7 @@
               </div>
               <div class="single-contact d-flex">
                 <i class="icon-email"></i>
-                <p>copapoficial@gmail.com</p>
+                <p>copapbandersnatch@gmail.com</p>
               </div>
             </div>
           </div>
@@ -397,19 +412,33 @@
       </div>
     </div>
     <div class="bottom-footer-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              Copyright &copy;<script>
-                document.write(new Date().getFullYear());
-              </script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="" target="_blank">COPAP</a>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
+      <div class="">
+        <div class="">
+          <div class="">
+            <div>
+              <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                  <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                  <use xlink:href="#gentle-wave" x="50" y="7" fill="#fff" />
+                  <p>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>
+                      document.write(new Date().getFullYear());
+                    </script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="" target="_blank">COPAP</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  </p>
+                </g>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   </footer>
   <!-- ##### contactos ##### -->

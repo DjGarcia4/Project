@@ -1,13 +1,13 @@
--- MariaDB dump 10.19  Distrib 10.4.22-MariaDB, for Win64 (AMD64)
+-- MySQL dump 10.13  Distrib 8.0.29, for Win64 (x86_64)
 --
 -- Host: localhost    Database: sistema_planilla
 -- ------------------------------------------------------
--- Server version	10.4.22-MariaDB
+-- Server version	8.0.29
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -16,28 +16,52 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `bitacora`
+--
+
+DROP TABLE IF EXISTS `bitacora`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `bitacora` (
+  `idBitacora` int NOT NULL AUTO_INCREMENT,
+  `Usuario_idUsuario` int NOT NULL,
+  `idTabla` int NOT NULL,
+  `accion` varchar(45) NOT NULL,
+  `horaFecha_accion` datetime NOT NULL,
+  PRIMARY KEY (`idBitacora`),
+  KEY `FK_bitacora_Usuarios` (`Usuario_idUsuario`),
+  KEY `FK_bitacora_Tablas` (`idTabla`),
+  CONSTRAINT `FK_bitacora_Tablas` FOREIGN KEY (`idTabla`) REFERENCES `tablas` (`idTabla`),
+  CONSTRAINT `FK_bitacora_Usuarios` FOREIGN KEY (`Usuario_idUsuario`) REFERENCES `usuarios` (`idUsuario`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `bitacora`
+--
+
+LOCK TABLES `bitacora` WRITE;
+/*!40000 ALTER TABLE `bitacora` DISABLE KEYS */;
+/*!40000 ALTER TABLE `bitacora` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `cargos`
 --
 
-DROP DATABASE `sistema_planilla`;
-
-CREATE DATABASE `sistema_planilla`;
-
-USE `sistema_planilla`;
-
 DROP TABLE IF EXISTS `cargos`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `cargos` (
-  `idCargo` int(11) NOT NULL AUTO_INCREMENT,
+  `idCargo` int NOT NULL AUTO_INCREMENT,
   `DescripcionCargo` varchar(45) NOT NULL,
-  `Salario` int(11) NOT NULL,
-  `Departamentos_idDepartamentos` int(11) NOT NULL,
-  `Estados_idEstado` int(11) NOT NULL,
+  `Salario` int NOT NULL,
+  `Departamentos_idDepartamentos` int NOT NULL,
+  `Estados_idEstado` int NOT NULL,
   PRIMARY KEY (`idCargo`),
   KEY `fk_Cargos_Departamentos1_idx` (`Departamentos_idDepartamentos`),
   CONSTRAINT `fk_Cargos_Departamentos1` FOREIGN KEY (`Departamentos_idDepartamentos`) REFERENCES `departamentos` (`idDepartamentos`)
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -56,14 +80,14 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `ciudades`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ciudades` (
-  `idCiudades` int(11) NOT NULL AUTO_INCREMENT,
+  `idCiudades` int NOT NULL AUTO_INCREMENT,
   `DescripcionCiudad` varchar(45) NOT NULL,
-  `Estados_idEstado` int(11) NOT NULL,
+  `Estados_idEstado` int NOT NULL,
   PRIMARY KEY (`idCiudades`),
   UNIQUE KEY `DescripcionCiudad` (`DescripcionCiudad`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -82,13 +106,13 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `departamentos`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `departamentos` (
-  `idDepartamentos` int(11) NOT NULL AUTO_INCREMENT,
+  `idDepartamentos` int NOT NULL AUTO_INCREMENT,
   `DescripcionDepto` varchar(45) NOT NULL,
-  `Estados_idEstado` int(11) NOT NULL,
+  `Estados_idEstado` int NOT NULL,
   PRIMARY KEY (`idDepartamentos`)
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -107,10 +131,10 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `detalleplanillas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `detalleplanillas` (
-  `Planillas_idPlanilla` int(11) NOT NULL,
-  `Empleados_idEmpleados` int(11) NOT NULL,
+  `Planillas_idPlanilla` int NOT NULL,
+  `Empleados_idEmpleados` int NOT NULL,
   `Salario_Base` decimal(20,6) NOT NULL,
   `IHSS` decimal(20,6) NOT NULL,
   `RAP` decimal(20,6) NOT NULL,
@@ -124,7 +148,7 @@ CREATE TABLE `detalleplanillas` (
   KEY `fk_DetallePlanillas_Empleados1` (`Empleados_idEmpleados`),
   CONSTRAINT `fk_DetallePlanillas_Empleados1` FOREIGN KEY (`Empleados_idEmpleados`) REFERENCES `empleados` (`idEmpleados`),
   CONSTRAINT `fk_DetallePlanillas_Planillas` FOREIGN KEY (`Planillas_idPlanilla`) REFERENCES `planillas` (`idPlanillas`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -142,10 +166,10 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `empleados`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `empleados` (
-  `idEmpleados` int(11) NOT NULL AUTO_INCREMENT,
-  `Empresas_idEmpresas` int(11) NOT NULL,
+  `idEmpleados` int NOT NULL AUTO_INCREMENT,
+  `Empresas_idEmpresas` int NOT NULL,
   `Cedula` varchar(15) NOT NULL,
   `PrimerNombre` varchar(45) NOT NULL,
   `SegundoNombre` varchar(45) NOT NULL,
@@ -156,11 +180,11 @@ CREATE TABLE `empleados` (
   `FechaNacimiento` date NOT NULL,
   `FechaIngreso` date NOT NULL,
   `CuentaBancaria` varchar(45) NOT NULL,
-  `Sexos_idSexo` int(11) NOT NULL,
-  `Cargos_idCargos` int(11) NOT NULL,
-  `Estados_idEstado` int(11) NOT NULL,
+  `Sexos_idSexo` int NOT NULL,
+  `Cargos_idCargos` int NOT NULL,
+  `Estados_idEstado` int NOT NULL,
   `Correo` varchar(45) DEFAULT NULL,
-  `Ciudades_idCiudades` int(11) NOT NULL,
+  `Ciudades_idCiudades` int NOT NULL,
   PRIMARY KEY (`idEmpleados`),
   UNIQUE KEY `CuentaBancaria_UNIQUE` (`CuentaBancaria`),
   KEY `fk_Empleados_Sexos1_idx` (`Sexos_idSexo`),
@@ -173,7 +197,7 @@ CREATE TABLE `empleados` (
   CONSTRAINT `fk_Empleados_Empresas1` FOREIGN KEY (`Empresas_idEmpresas`) REFERENCES `empresas` (`idEmpresa`),
   CONSTRAINT `fk_Empleados_Estados1` FOREIGN KEY (`Estados_idEstado`) REFERENCES `estados` (`idEstado`),
   CONSTRAINT `fk_Empleados_Sexos1` FOREIGN KEY (`Sexos_idSexo`) REFERENCES `sexos` (`idSexo`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -192,13 +216,13 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `empresas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `empresas` (
-  `idEmpresa` int(11) NOT NULL AUTO_INCREMENT,
+  `idEmpresa` int NOT NULL AUTO_INCREMENT,
   `Nombre` varchar(45) NOT NULL,
-  `Estados_idEstado` int(11) NOT NULL,
+  `Estados_idEstado` int NOT NULL,
   PRIMARY KEY (`idEmpresa`)
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -217,12 +241,12 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `estados`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `estados` (
-  `idEstado` int(11) NOT NULL AUTO_INCREMENT,
+  `idEstado` int NOT NULL AUTO_INCREMENT,
   `DescripcionEsstado` varchar(45) NOT NULL,
   PRIMARY KEY (`idEstado`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -236,47 +260,20 @@ INSERT INTO `estados` VALUES (1,'ACTIVO'),(2,'INACTIVO');
 UNLOCK TABLES;
 
 --
--- Table structure for table `pagos`
---
-
-DROP TABLE IF EXISTS `pagos`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `pagos` (
-  `idPagos` int(11) NOT NULL AUTO_INCREMENT,
-  `DescripcionPagos` varchar(45) NOT NULL,
-  `TipoPagos_idTipoPago` int(11) NOT NULL,
-  PRIMARY KEY (`idPagos`),
-  KEY `fk_Pagos_TipoPagos1_idx` (`TipoPagos_idTipoPago`),
-  CONSTRAINT `fk_Pagos_TipoPagos1` FOREIGN KEY (`TipoPagos_idTipoPago`) REFERENCES `tipopagos` (`idTipoPago`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `pagos`
---
-
-LOCK TABLES `pagos` WRITE;
-/*!40000 ALTER TABLE `pagos` DISABLE KEYS */;
-INSERT INTO `pagos` VALUES (1,'SALARIO BASE',1),(2,'COMISION',2),(3,'CATORCIAVO',2),(4,'AGUINALDO',2),(5,'VACACIONES',2),(6,'HORAS EXTRAS',2),(7,'IHSS',3),(8,'INASISTENCIA',3),(9,'RAP',3),(10,'IHSS',3),(11,'ANTICIPO',3),(12,'ISR',3),(13,'SUELDO TOTAL',4);
-/*!40000 ALTER TABLE `pagos` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `planillas`
 --
 
 DROP TABLE IF EXISTS `planillas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `planillas` (
-  `idPlanillas` int(11) NOT NULL AUTO_INCREMENT,
+  `idPlanillas` int NOT NULL AUTO_INCREMENT,
   `NumeroPlanilla` varchar(50) DEFAULT NULL,
-  `Empresas_idEmpresas` int(11) NOT NULL,
+  `Empresas_idEmpresas` int NOT NULL,
   `FechaInicio` datetime NOT NULL,
   `FechaFin` datetime NOT NULL,
   PRIMARY KEY (`idPlanillas`)
-) ENGINE=InnoDB AUTO_INCREMENT=66 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=66 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -294,16 +291,16 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `registros`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `registros` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `id_Planilla` int(11) NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  `id_Planilla` int NOT NULL,
   `Nombre_Planilla` varchar(75) NOT NULL,
   `url` varchar(75) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_Registros_planillas` (`id_Planilla`),
   CONSTRAINT `fk_Registros_planillas` FOREIGN KEY (`id_Planilla`) REFERENCES `planillas` (`idPlanillas`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -321,12 +318,12 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `sexos`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `sexos` (
-  `idSexo` int(11) NOT NULL AUTO_INCREMENT,
+  `idSexo` int NOT NULL AUTO_INCREMENT,
   `DescripcionSexo` varchar(45) NOT NULL,
   PRIMARY KEY (`idSexo`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -340,27 +337,27 @@ INSERT INTO `sexos` VALUES (1,'MASCULINO'),(2,'FEMENINO');
 UNLOCK TABLES;
 
 --
--- Table structure for table `tipopagos`
+-- Table structure for table `tablas`
 --
 
-DROP TABLE IF EXISTS `tipopagos`;
+DROP TABLE IF EXISTS `tablas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `tipopagos` (
-  `idTipoPago` int(11) NOT NULL AUTO_INCREMENT,
-  `DescripcionTipoPago` varchar(45) NOT NULL,
-  PRIMARY KEY (`idTipoPago`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tablas` (
+  `idTabla` int NOT NULL AUTO_INCREMENT,
+  `nombreTabla` varchar(45) NOT NULL,
+  PRIMARY KEY (`idTabla`)
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `tipopagos`
+-- Dumping data for table `tablas`
 --
 
-LOCK TABLES `tipopagos` WRITE;
-/*!40000 ALTER TABLE `tipopagos` DISABLE KEYS */;
-INSERT INTO `tipopagos` VALUES (1,'SALARIO NETO'),(2,'BONIFICACION'),(3,'DEDUCCIONES'),(4,'PAGO TOTAL');
-/*!40000 ALTER TABLE `tipopagos` ENABLE KEYS */;
+LOCK TABLES `tablas` WRITE;
+/*!40000 ALTER TABLE `tablas` DISABLE KEYS */;
+INSERT INTO `tablas` VALUES (1,'bitacora'),(2,'cargos'),(3,'ciudades'),(4,'departamentos'),(5,'detalleplanillas'),(6,'empleados'),(7,'empresas'),(8,'estados'),(9,'planillas'),(10,'registros'),(11,'sexos'),(12,'tablas'),(13,'usuarios');
+/*!40000 ALTER TABLE `tablas` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -369,20 +366,20 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `usuarios`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `usuarios` (
-  `idUsuario` int(11) NOT NULL AUTO_INCREMENT,
+  `idUsuario` int NOT NULL AUTO_INCREMENT,
   `Usuario` varchar(45) NOT NULL,
   `Contrasenia` varchar(45) NOT NULL,
-  `Empleados_idEmpleados` int(11) NOT NULL,
-  `Empresas_idEmpresas` int(11) NOT NULL,
-  `Estados_idEstado` int(11) NOT NULL,
+  `Empleados_idEmpleados` int NOT NULL,
+  `Empresas_idEmpresas` int NOT NULL,
+  `Estados_idEstado` int NOT NULL,
   PRIMARY KEY (`idUsuario`),
   UNIQUE KEY `Empleados_idEmpleados_UNIQUE` (`Empleados_idEmpleados`),
   KEY `fk_Usuarios_Empresas` (`Empresas_idEmpresas`),
   CONSTRAINT `fk_Usuarios_Empleados1` FOREIGN KEY (`Empleados_idEmpleados`) REFERENCES `empleados` (`idEmpleados`),
   CONSTRAINT `fk_Usuarios_Empresas` FOREIGN KEY (`Empresas_idEmpresas`) REFERENCES `empresas` (`idEmpresa`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -391,9 +388,13 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (1,'OJAO',MD5('alquimista1999'),1,1,1),(2,'EFZR',MD5('Emerson2000'),7,1,1),(3,'DJGM',MD5('DJ2001'),9,1,1),(4,'DYCS',MD5('DULCHI2001'),10,2,1),(5,'DIMF',MD5('DIEMO1998'),11,2,1);
+INSERT INTO `usuarios` VALUES (1,'OJAO','34e59dad2b30ac27a3a3d1f12cd17b24',1,1,1),(2,'EFZR','f0df1c72013be81ea26d7ddc1f31578a',7,1,1),(3,'DJGM','5e96854d2575b403b3926c90438b76d4',9,1,1),(4,'DYCS','381e7667ed77207ac390559d1a53491b',10,2,1),(5,'DIMF','ce9aafe84ea8c5dc017a34a35c16ff17',11,2,1);
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Dumping events for database 'sistema_planilla'
+--
 
 --
 -- Dumping routines for database 'sistema_planilla'
@@ -537,4 +538,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-04-08 10:31:50
+-- Dump completed on 2022-07-18 12:52:57

@@ -26,6 +26,8 @@
 
   <!-- Core Stylesheet -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styleT.css">
+  <link rel="stylesheet" href="../css/style2.0.css">
   <link rel="stylesheet" href="team.css">
 
 
@@ -65,7 +67,7 @@
                   <a href="../index.php"><img src="../img/bg-img/logo.png" alt="" width="120"></a>
                 </div>
                 <ul>
-                  <li><a href="../menu/Modulos.php">Modulos o Servicios</a></li>
+                  <li><a href="../menu/Modulos.php">Módulos o Servicios</a></li>
                   <li><a href="about-us.php">Sobre Nosotros</a></li>
                   <li><a href="contact.php">Contactanos</a></li>
                 </ul>
@@ -76,7 +78,7 @@
             <!-- Calling Info -->
             <div class="calling-info">
               <div class="call-center">
-                <a href="../Login/loginForm.php"><i class="icon-house"></i> <span>INICIAR SESION</span></a>
+                <a href="../Login/loginForm.php"><i class="icon-house"></i> <span>INICIAR SESIÓN</span></a>
               </div>
             </div>
           </nav>
@@ -94,7 +96,7 @@
 
   <div class="breadcumb-area bg-img" style="background-image: url(../img/bg-img/breadcumb.jpg);">
     <div class="bradcumbContent">
-      <h2>COPAP ES TU MEJOR OPCION</h2>
+      <h2>COPAP ES TU MEJOR OPCIÓN</h2>
     </div>
   </div>
   <!-- ##### Breadcumb Area End ##### -->
@@ -102,6 +104,27 @@
   <!-- ##### About Us Area Start ##### -->
   <section class="about-us-area mt-50 section-padding-100">
     <div class="container">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
       <div class="row">
         <div class="col-12">
           <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
@@ -112,11 +135,24 @@
       </div>
       <div class="row">
         <div class="col-12 col-md-6 wow fadeInUp" data-wow-delay="400ms">
-          <p>Nuestro sistema cuenta con las herramientas necesarias para cubrir las necesidades basicas de tu empresa. Cada dia el mundo laboral crece mas, te enfrentas a diferentes retos, nosotros hacemos que el manejo de yus empleados sea mas facil, organizado y sobre todo, confiable. El manejo adecuado de tu personal es una pieza clave para el buen funcionamiento de tu empresa. Al contar con un sistema que cubre desde el control de horarios hasta el control de pagos te estas evitando el enfrentamiento a futuros predicamentos entre tu equipo de trabajo e incluso legales.</p>
+
+          <p>Nuestro sistema cuenta con las herramientas necesarias para cubrir las necesidades básicas de tu empresa.
+            Cada día el mundo laboral crece más, te enfrentas a diferentes retos, nosotros hacemos que el manejo de tus
+            empleados sea más fácil, organizado y sobre todo, confiable. El manejo adecuado de tu personal es una pieza
+            clave para el buen funcionamiento de tu empresa. Al contar con un sistema que cubre desde el control de
+            horarios hasta el control de pagos te estás evitando el enfrentamiento a futuros predicamentos entre tu
+            equipo de trabajo e incluso legales.</p>
         </div>
         <div class="col-12 col-md-6 wow fadeInUp" data-wow-delay="500ms">
-          <p>Nuestro sistema cuenta con las herramientas necesarias para cubrir las necesidades basicas de tu empresa. Cada dia el mundo laboral crece mas, te enfrentas a diferentes retos, nosotros hacemos que el manejo de yus empleados sea mas facil, organizado y sobre todo, confiable. El manejo adecuado de tu personal es una pieza clave para el buen funcionamiento de tu empresa. Al contar con un sistema que cubre desde el control de horarios hasta el control de pagos te estas evitando el enfrentamiento a futuros predicamentos entre tu equipo de trabajo e incluso legales. </p>
+          <p>Nuestro sistema cuenta con las herramientas necesarias para cubrir las necesidades básicas de tu empresa.
+            Cada día el mundo laboral crece más, te enfrentas a diferentes retos, nosotros hacemos que el manejo de tus
+            empleados sea más fácil, organizado y sobre todo, confiable. El manejo adecuado de tu personal es una pieza
+            clave para el buen funcionamiento de tu empresa. Al contar con un sistema que cubre desde el control de
+            horarios hasta el control de pagos te estás evitando el enfrentamiento a futuros predicamentos entre tu
+            equipo de trabajo e incluso legales.
         </div>
+
+
       </div>
       <div class="row">
         <div class="col-12">
@@ -148,12 +184,14 @@
               <div class="member-info-content">
                 <h4>Emerson Zapata</h4>
                 <span></span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                <ol>
+                  <li><a href="#"><i class="fa-brands instagram"></i></a></li>
+                  <li><a href="#"><i class="fa-brands whatsapp"></i></a></li>
+                  <li><a href="#"><i class="fa-brands twitter twitter"></i></a></li>
+                  <li><a href="#"><i class=""></i></a></li>
+                  <li><a href="#"><i class=""></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-twitter twitter"></i></a></li>
+                </ol>
               </div>
             </div>
           </div>
@@ -166,12 +204,13 @@
               <div class="member-info-content">
                 <h4>Dulce Sanchez</h4>
                 <span>Diseñadora Grafica</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                <ol>
+                  <li><a href="#"><i class="fa-brands instagram"></i></a></li>
+                  <li><a href="#"><i class="fa-brands whatsapp"></i></a></li>
+                  <li><a href="#"><i class="fa-brands twitter twitter"></i></a></li>
+                  <li><a href="#"><i class=""></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-twitter twitter"></i></a></li>
+                </ol>
               </div>
             </div>
           </div>
@@ -184,12 +223,13 @@
               <div class="member-info-content">
                 <h4>Denis Garcia</h4>
                 <span>Programador Principal</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                <ol>
+                  <li><a href="#"><i class="fa-brands instagram"></i></a></li>
+                  <li><a href="#"><i class="fa-brands whatsapp"></i></a></li>
+                  <li><a href="#"><i class="fa-brands twitter twitter"></i></a></li>
+                  <li><a href="#"><i class=""></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-twitter twitter"></i></a></li>
+                </ol>
               </div>
             </div>
           </div>
@@ -202,12 +242,14 @@
               <div class="member-info-content">
                 <h4>Onan Aguilera</h4>
                 <span>Analista de Base de Datos</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                <ol>
+                  <li><a href="#"><i class="fa-brands instagram"></i></a></li>
+                  <li><a href="#"><i class="fa-brands whatsapp"></i></a></li>
+                  <li><a href="#"><i class="fa-brands twitter twitter"></i></a></li>
+                  <li><a href="#"><i class=""></i></a></li>
+                  <li><a href="#"><i class=""></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-twitter twitter"></i></a></li>
+                </ol>
               </div>
             </div>
           </div>
@@ -232,12 +274,14 @@
               <div class="member-info-content">
                 <h4>Fernando Villatoro</h4>
                 <span>Co Analista de base de Datos</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                <ol>
+                  <li><a href="#"><i class="fa-brands instagram"></i></a></li>
+                  <li><a href="#"><i class="fa-brands whatsapp"></i></a></li>
+                  <li><a href="#"><i class="fa-brands twitter twitter"></i></a></li>
+                  <li><a href="#"><i class=""></i></a></li>
+                  <li><a href="#"><i class=""></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-twitter twitter"></i></a></li>
+                </ol>
               </div>
             </div>
           </div>
@@ -250,30 +294,33 @@
               <div class="member-info-content">
                 <h4>Edith Toledo</h4>
                 <span>Administradora de Trello</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                <ol>
+                  <li><a href="#"><i class="fa-brands instagram"></i></a></li>
+                  <li><a href="#"><i class="fa-brands whatsapp"></i></a></li>
+                  <li><a href="#"><i class="fa-brands twitter twitter"></i></a></li>
+                  <li><a href="#"><i class=""></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-twitter twitter"></i></a></li>
+                </ol>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6" data-aos="zoom-out" data-aos-delay="300">
+        <div class="col-lg-3 col-md-6" data-aos="zoom-out" data-aos-delay="200">
           <div class="member">
             <img src="../assets/img/Guty.png" class="img-fluid" alt="">
             <div class="member-info">
               <div class="member-info-content">
                 <h4>Jonny Deep</h4>
                 <span>Asistente de Atencion al cliente</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                <ol>
+                  <li><a href="#"><i class="fa-brands instagram"></i></a></li>
+                  <li><a href="#"><i class="fa-brands whatsapp"></i></a></li>
+                  <li><a href="#"><i class="fa-brands twitter twitter"></i></a></li>
+                  <li><a href="#"><i class=""></i></a></li>
+                  <li><a href="#"><i class=""></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-twitter twitter"></i></a></li>
+                </ol>
               </div>
             </div>
           </div>
@@ -286,12 +333,13 @@
               <div class="member-info-content">
                 <h4>Diego Molina</h4>
                 <span>Co Diseñador Grafico</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                <ol>
+                  <li><a href="#"><i class="fa-brands instagram"></i></a></li>
+                  <li><a href="#"><i class="fa-brands whatsapp"></i></a></li>
+                  <li><a href="#"><i class="fa-brands twitter twitter"></i></a></li>
+                  <li><a href="#"><i class=""></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-twitter twitter"></i></a></li>
+                </ol>
               </div>
             </div>
           </div>
@@ -315,10 +363,12 @@
           <!-- Footer Widget Area -->
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="footer-widget mb-100">
-              <div class="widget-title">
-                <a href="#"><img src="../img/bg-img/logo.png" alt=""></a>
+              <div style="text-align: center;" class="widget-title">
+                <!-- <a href="#"><img src="img/bg-img/logo.png" alt=""></a> -->
+                <img src="../img/QR.png" alt="" width="200px">
+                <p>¡ESCANEAME PARA MÁS INFORMACIÓN!</p>
               </div>
-              <p>CONTROL DE PLANILAS DE PAGO COPAP</p>
+              <p>Redes Sociales</p>
               <div class="footer-social-info">
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
@@ -335,11 +385,14 @@
               </div>
               <nav>
                 <ul class="useful-links">
-                  <li><a href="#">EMERSON ZAPATA</a></li>
-                  <li><a href="#">DENIS GARCIA</a></li>
-                  <li><a href="#">DULCE SANCHEZ</a></li>
-                  <li><a href="#">ONAN AGUILERA</a></li>
-                  <li><a href="#">DIEGO MOLINA</a></li>
+                  <li><a href="#" style="cursor:default;">EMERSON ZAPATA</a></li>
+                  <li><a href="#" style="cursor:default;">DENIS GARCIA</a></li>
+                  <li><a href="#" style="cursor:default;">DULCE SANCHEZ</a></li>
+                  <li><a href="#" style="cursor:default;">ONAN AGUILERA</a></li>
+                  <li><a href="#" style="cursor:default;">DIEGO MOLINA</a></li>
+                  <li><a href="#" style="cursor:default;">JUAN VILLATORO</a></li>
+                  <li><a href="#" style="cursor:default;">EDITH TOLEDO</a></li>
+                  <li><a href="#" style="cursor:default;">JOHNNY DEEP</a></li>
                 </ul>
               </nav>
             </div>
@@ -349,14 +402,6 @@
             <div class="footer-widget mb-100">
               <div class="widget-title">
 
-              </div>
-              <div class="gallery-list d-flex justify-content-between flex-wrap">
-                <a href="../img/bg-img/control1.jpg" class="gallery-img" title="Gallery Image 1"><img src="../img/bg-img/control1.jpg" alt=""></a>
-                <a href="../img/bg-img/control2.jpg" class="gallery-img" title="Gallery Image 2"><img src="../img/bg-img/control2.jpg" alt=""></a>
-                <a href="../img/bg-img/control3.jpg" class="gallery-img" title="Gallery Image 3"><img src="../img/bg-img/control3.jpg" alt=""></a>
-                <a href="../img/bg-img/control4.jpg" class="gallery-img" title="Gallery Image 4"><img src="../img/bg-img/control4.jpg" alt=""></a>
-                <a href="../img/bg-img/control5.jpg" class="gallery-img" title="Gallery Image 5"><img src="../img/bg-img/control5.jpg" alt=""></a>
-                <a href="../img/bg-img/control6.jpg" class="gallery-img" title="Gallery Image 6"><img src="../img/bg-img/control6.jpg" alt=""></a>
               </div>
             </div>
           </div>
@@ -376,7 +421,7 @@
               </div>
               <div class="single-contact d-flex">
                 <i class="icon-email"></i>
-                <p>copapoficial@gmail.com</p>
+                <p>copapbandersnatch@gmail.com</p>
               </div>
             </div>
           </div>
@@ -384,19 +429,35 @@
       </div>
     </div>
     <div class="bottom-footer-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              Copyright &copy;<script>
-                document.write(new Date().getFullYear());
-              </script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">COPAP</a>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
+      <div class="">
+        <div class="">
+          <div class="">
+            <div>
+              <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                  <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                  <use xlink:href="#gentle-wave" x="50" y="7" fill="#fff" />
+                  <p>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>
+                    document.write(new Date().getFullYear());
+                    </script> All rights reserved | This template is made with <i class="fa fa-heart-o"
+                      aria-hidden="true"></i> by <a href="" target="_blank">COPAP</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  </p>
+                </g>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   </footer>
 
@@ -412,7 +473,8 @@
   <script src="../js/plugins/plugins.js"></script>
   <!-- Active js -->
   <script src="../js/active.js"></script>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter.js"></script>

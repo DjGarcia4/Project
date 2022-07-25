@@ -17,6 +17,7 @@
   <!-- Core Stylesheet -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../css/estilosValidacion.css">
+  <link rel="stylesheet" href="../css/style2.0.css">
 
 </head>
 
@@ -54,7 +55,7 @@
                   <a href="../index.php"><img src="../img/bg-img/logo.png" alt="" width="120"></a>
                 </div>
                 <ul>
-                  <li><a href="../menu/Modulos.php">Modulos o Servicios</a></li>
+                  <li><a href="../menu/Modulos.php">Módulos o Servicios</a></li>
 
 
                   <li><a href="about-us.php">Sobre Nosotros</a></li>
@@ -107,7 +108,12 @@
                       <img src="../img/contactanosC.png" alt="" width="200">
                       <hr>
                     </div>
-                    <h class="mt-30">Envianos un correo electronico y con gusto te atenderemos resolviendo todas tus dudas</h>
+
+
+                    <h class="mt-30">Envianos un correo electrónico y con gusto te atenderemos resolviendo todas tus
+                      dudas</h>
+
+
                   </div>
                   <!-- Single Contact Info -->
                   <div class="single-contact-info d-flex">
@@ -121,36 +127,46 @@
               <!-- Contact Form Area -->
               <div class="col-12 col-lg-7">
                 <div class="contact-form-area wow fadeInUp" data-wow-delay="500ms">
-                  <form class="formulario_contacto" id="formulario" action="https://formsubmit.co/copapbandersnatch@gmail.com" method="post">
+                  <form class="formulario_contacto" id="formulario"
+                    action="https://formsubmit.co/copapbandersnatch@gmail.com" method="post">
 
                     <!--Grupo: Primer Nombre-->
                     <div class="formulario__grupo" id="grupo__nombre_contactanos">
                       <label for="nombre_contactanos" class="formulario__label">Nombre Completo</label>
                       <div class="formulario__grupo-input">
 
-                        <input type="text" class="formulario__input" name="nombre_contactanos" id="nombre_contactanos" title="Ingresa su nombre completo" onkeypress="return soloLetras(event)" placeholder="Nombre Completo" required minlength="12" maxlength="50">
+                        <input type="text" class="formulario__input" name="nombre_contactanos" id="nombre_contactanos"
+                          title="Ingresa su nombre completo" onkeypress="return soloLetras(event)"
+                          placeholder="Nombre Completo" required minlength="12" maxlength="50">
 
                       </div>
-                      <p class="formulario__input-error">Este tiene que ser de 12 a 50 digitos y solo puede contener
+                      <p class="formulario__input-error">Este tiene que ser de 12 a 50 dígitos y solo puede contener
                         letras.</p>
                     </div>
 
                     <div class="formulario__grupo" id="grupo__correo">
                       <label for="Correo" class="formulario__label">Correo Elecronico</label>
                       <div class="formulario__grupo-input">
-                        <input type="email" class="formulario__input" name="Correo" id="Correo" title="Ingresa el correo elecctronico" placeholder="Correo Electronico" pattern="[a-z0-9_]+([.][a-z0-9_]+)*@[a-z0-9_]+([.][a-z0-9_]+)*[.][a-z]{1,5}" required minlength="12" maxlength="50" onblur="lowerCase('Correo')">
+                        <input type="email" class="formulario__input" name="Correo" id="Correo"
+                          title="Ingresa el correo elecctronico" placeholder="Correo Electronico"
+                          pattern="[a-z0-9_]+([.][a-z0-9_]+)*@[a-z0-9_]+([.][a-z0-9_]+)*[.][a-z]{1,5}" required
+                          minlength="12" maxlength="50" onblur="lowerCase('Correo')">
                       </div>
-                      <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.
+
+                      <p class="formulario__input-error">El correo solo puede contener letras, números, puntos, guiones
+                        y guión bajo.
+
                       </p>
                     </div>
 
                     <div class="formulario__grupo" id="grupo__Mensaje">
                       <label for="Mensaje" class="formulario__label">Mensaje</label>
                       <div class="formulario__grupo-input">
-                        <textarea class="formulario__input" name="Mensaje" id="Mensaje" placeholder="Ingresa un mensaje" cols="30" rows=50 minlength="8" maxlength="150" required></textarea>
+                        <textarea class="formulario__input" name="Mensaje" id="Mensaje" placeholder="Ingresa un mensaje"
+                          cols="30" rows=50 minlength="8" maxlength="150" required></textarea>
                       </div>
                       <div id="contador">0/150</div>
-                      <p class="formulario__input-error">Este tiene que ser de 12 a 50 digitos y solo puede contener
+                      <p class="formulario__input-error">Este tiene que ser de 12 a 50 dígitos y solo puede contener
                         letras.</p>
                     </div>
 
@@ -168,16 +184,39 @@
 
   <!-- ##### INFO  ##### -->
   <footer class="footer-area">
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
     <div class="main-footer-area section-padding-100-0">
       <div class="container">
         <div class="row">
           <!-- Footer Widget Area -->
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="footer-widget mb-100">
-              <div class="widget-title">
-                <a href="#"><img src="../img/bg-img/logo.png" alt=""></a>
+              <div style="text-align: center;" class="widget-title">
+                <!-- <a href="#"><img src="../img/bg-img/logo.png" alt=""></a> -->
+                <a href="#"><img src="../img/QR.png" width="200px"></a>
+                <p>¡ESCANEAME PARA MÁS INFORMACIÓN!</p>
               </div>
-              <p>CONTROL DE PLANILAS DE PAGO COPAP</p>
+              <p>Redes Sociales</p>
               <div class="footer-social-info">
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
@@ -194,11 +233,14 @@
               </div>
               <nav>
                 <ul class="useful-links">
-                  <li><a href="#">EMERSON ZAPATA</a></li>
-                  <li><a href="#">DENIS GARCIA</a></li>
-                  <li><a href="#">DULCE SANCHEZ</a></li>
-                  <li><a href="#">ONAN AGUILERA</a></li>
-                  <li><a href="#">DIEGO MOLINA</a></li>
+                  <li><a href="#" style="cursor:default;">EMERSON ZAPATA</a></li>
+                  <li><a href="#" style="cursor:default;">DENIS GARCIA</a></li>
+                  <li><a href="#" style="cursor:default;">DULCE SANCHEZ</a></li>
+                  <li><a href="#" style="cursor:default;">ONAN AGUILERA</a></li>
+                  <li><a href="#" style="cursor:default;">DIEGO MOLINA</a></li>
+                  <li><a href="#" style="cursor:default;">JUAN VILLATORO</a></li>
+                  <li><a href="#" style="cursor:default;">EDITH TOLEDO</a></li>
+                  <li><a href="#" style="cursor:default;">JOHNNY DEEP</a></li>
                 </ul>
               </nav>
             </div>
@@ -208,14 +250,6 @@
             <div class="footer-widget mb-100">
               <div class="widget-title">
 
-              </div>
-              <div class="gallery-list d-flex justify-content-between flex-wrap">
-                <a href="../img/bg-img/control1.jpg" class="gallery-img" title="Gallery Image 1"><img src="../img/bg-img/control1.jpg" alt=""></a>
-                <a href="../img/bg-img/control2.jpg" class="gallery-img" title="Gallery Image 2"><img src="../img/bg-img/control2.jpg" alt=""></a>
-                <a href="../img/bg-img/control3.jpg" class="gallery-img" title="Gallery Image 3"><img src="../img/bg-img/control3.jpg" alt=""></a>
-                <a href="../img/bg-img/control4.jpg" class="gallery-img" title="Gallery Image 4"><img src="../img/bg-img/control4.jpg" alt=""></a>
-                <a href="../img/bg-img/control5.jpg" class="gallery-img" title="Gallery Image 5"><img src="../img/bg-img/control5.jpg" alt=""></a>
-                <a href="../img/bg-img/control6.jpg" class="gallery-img" title="Gallery Image 6"><img src="../img/bg-img/control6.jpg" alt=""></a>
               </div>
             </div>
           </div>
@@ -243,16 +277,31 @@
       </div>
     </div>
     <div class="bottom-footer-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              Copyright &copy;<script>
-                document.write(new Date().getFullYear());
-              </script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="" target="_blank">COPAP</a>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
+      <div class="">
+        <div class="">
+          <div class="">
+            <div>
+              <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                  <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                  <use xlink:href="#gentle-wave" x="50" y="7" fill="#fff" />
+                  <p>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>
+                    document.write(new Date().getFullYear());
+                    </script> All rights reserved | This template is made with <i class="fa fa-heart-o"
+                      aria-hidden="true"></i> by <a href="" target="_blank">COPAP</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  </p>
+                </g>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
@@ -274,15 +323,15 @@
   <!-- Scripts Validacion de Formulario -->
   <script src="../js/formulario.js"></script>
   <script>
-    const mensaje = document.getElementById('Mensaje');
-    const contador = document.getElementById('contador');
+  const mensaje = document.getElementById('Mensaje');
+  const contador = document.getElementById('contador');
 
-    mensaje.addEventListener('input', function(e) {
-      const target = e.target;
-      const longitudMax = target.getAttribute('maxlength');
-      const longitudAct = target.value.length;
-      contador.innerHTML = `${longitudAct}/${longitudMax}`;
-    });
+  mensaje.addEventListener('input', function(e) {
+    const target = e.target;
+    const longitudMax = target.getAttribute('maxlength');
+    const longitudAct = target.value.length;
+    contador.innerHTML = `${longitudAct}/${longitudMax}`;
+  });
   </script>
 </body>
 
