@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Cargo</title>
+  <title>Usuario</title>
   <!-- FUENTES-->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -34,12 +34,20 @@
   include '../SqlTools/database.php';
 
   $Usuario = $_GET['idUsuario'];
+  $idUsuario = $_GET['Usuario'];
+
   $Empresa = $_GET['Empresas_idEmpresas'];
   $action = $_GET['action'];
-  $idCargo = 0;
 
-  if (isset($_GET['idCargo'])) {
-    $idCargo = $_GET['idCargo'];
+  $idUsuario = 0;
+  $idEmpleados = 0;
+
+  if (isset($_GET['idEmpleados'])) {
+    $idEmpleados = $_GET['idEmpleados'];
+  }
+
+  if (isset($_GET['Usuario'])) {
+    $idUsuario = $_GET['Usuario'];
   }
 
   $auxiliar = new database();
@@ -47,7 +55,7 @@
   $nombre = $auxiliar->sql;
   $name = mysqli_fetch_assoc($nombre);
 
-  $auxiliar->select('cargos', '*', "idCargo= '$idCargo'");
+  $auxiliar->select('usuarios', '*', "idUsuario= '$idUsuario'");
   $table = $auxiliar->sql;
   $row = mysqli_fetch_assoc($table);
   ?>
@@ -112,11 +120,11 @@
         <!-- Contenido de la página de inicio -->
         <div class="container-fluid">
           <h1 class="h3 mb-1 text-gray-800"><?php if ($action == 1) {
-                                              echo 'Creacion de Cargo';
+                                              echo 'Creacion de Usuario';
                                             } elseif ($action == 2) {
-                                              echo 'Modificacion de Cargo';
+                                              echo 'Modificacion de Usuario';
                                             } else {
-                                              echo 'Lectura de Cargo';
+                                              echo 'Lectura de Usuario';
                                             } ?></h1>
         </div>
         <div class="container">
@@ -133,61 +141,61 @@
                     <div class="p-5">
                       <!--Inicio de Form-->
                       <form class="formulario" action=<?php if ($action == 1) {
-                                                        echo 'SQLInsert_Cargos.php';
+                                                        echo 'SQLInsert_Usuarios.php';
                                                       } elseif ($action == 2) {
-                                                        echo 'SQLUpdate_Cargos.php';
+                                                        echo 'SQLUpdate_Usuarios.php';
                                                       } ?> id="formulario" method="post">
                         <input type="hidden" name="Usuario" value="<?php echo $Usuario; ?>">
                         <input type="hidden" name="Empresa" value="<?php echo $Empresa; ?>">
-                        <input type="hidden" name="idCargo" value="<?php echo $idCargo; ?>">
+                        <input type="hidden" name="idEmpleados" value="<?php echo $idEmpleados; ?>">
+                        <input type="hidden" name="idUsuario" value="<?php echo $idUsuario; ?>">
 
                         <!--Grupo: Descripcion de cargo-->
                         <div class="formulario__grupo" id="grupo__DescripcionCargo">
-                          <label for="DescripcionCargo" class="formulario__label">Nombre del Cargo</label>
+                          <label for="DescripcionCargo" class="formulario__label">Usuario</label>
                           <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="DescripcionCargo" id="DescripcionCargo" title="Ingresa nombre de cargo" <?php if ($action != 1 && $action != 2) {
-                                                                                                                                                          echo 'readonly';
-                                                                                                                                                        } ?> onkeypress="return soloLetras(event)" onblur="upperCase('DescripcionCargo')" placeholder="Nombre de Cargo" value="<?php if (isset($row)) {
-                                                                                                                                                                                                                                                                                    echo $row['DescripcionCargo'];
-                                                                                                                                                                                                                                                                                  } ?>" required minlength="5" maxlength="30">
+                            <input type="text" class="formulario__input" name="NombreUsuario" id="Usuario" title="Ingresa nombre de Usuario" <?php if ($action != 1 && $action != 2) {
+                                                                                                                                                echo 'readonly';
+                                                                                                                                              } ?> onblur="upperCase('Usuario')" placeholder="Nombre del Usuario" value="<?php if (isset($row)) {
+                                                                                                                                                                                                                      echo $row['Usuario'];
+                                                                                                                                                                                                                    } ?>" required minlength="4" maxlength="15">
                           </div>
-                          <p class="formulario__input-error">La descripción de cargo solo acepta letras y el máximo son 30.</p>
+                          <p class="formulario__input-error">llene el campo</p>
                         </div>
 
-                        <!--Grupo: Salario-->
-                        <div class="formulario__grupo" id="grupo__Salario">
-                          <label for="Salario" class="formulario__label">Salario</label>
-                          <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="Salario" id="Salario" title="Ingresa salario" <?php if ($action != 1 && $action != 2) {
-                                                                                                                                echo 'readonly';
-                                                                                                                              } ?> onkeypress="return soloNumeros(event)" placeholder="Salario" value="<?php if (isset($row)) {
-                                                                                                                                                                                                            echo $row['Salario'];
-                                                                                                                                                                                                          } ?>" required minlength="3" maxlength="7">
-                          </div>
-                          <p class="formulario__input-error">El salario solo acepta números.</p>
-                        </div>
-
-                        <!--Grupo: Departamento-->
+                        <!--Grupo: Empleado-->
                         <?php
                         $grid = new database();
-                        $grid->select('departamentos', '*');
+                        $grid->select('empleados', "idEmpleados, concat(PrimerNombre, ' ' , PrimerApellido) as Nombre", 'Empresas_idEmpresas = ' . $Empresa . '');
                         $table = $grid->sql;
+                        $ex = mysqli_fetch_assoc($table)
                         ?>
-                        <div class="formulario__grupo" id="grupo__Departamentos_idDepartamentos">
-                          <label for="Departamentos_idDepartamentos" class="formulario__label">Departamento</label>
-                          <select class="formulario__input" name="Departamentos_idDepartamentos" id="Departamentos_idDepartamentos" title="Seleciona una opcion" <?php if ($action != 1 && $action != 2) {
-                                                                                                                                                                    echo 'readonly';
-                                                                                                                                                                  } ?> value="" required>
-                            <option value="">Selecciona un departamento</option>
-                            <?php while ($ex = mysqli_fetch_assoc($table)) { ?>
-                              <option value=<?php echo $ex['idDepartamentos']; ?> <?php if (isset($row)) {
-                                                                                    if ($row['Departamentos_idDepartamentos'] == $ex['idDepartamentos']) {
-                                                                                      echo 'selected';
-                                                                                    }
-                                                                                  } ?>><?php echo $ex['DescripcionDepto']; ?></option>
-                            <?php } ?>
+                        <div class="formulario__grupo" id="grupo__Empleado_idEmpleados">
+                          <label for="Empleado_idEmpleados" class="formulario__label">Empleado</label>
+                          <select class="formulario__input" name="Empleado_idEmpleados" id="Empleado_idEmpleados" title="Selecciona un opcion" <?php if ($action != 1 && $action != 2) echo "readonly" ?> required>
+                            <option value="">Seleccione un Empleado</option>
+                            <?php
+                            while ($ex = mysqli_fetch_assoc($table)) {
+                            ?>
+                              <option value="<?php echo $ex['idEmpleados'] ?>" <?php if(isset($row)) if ($row['Empleados_idEmpleados'] == $ex['idEmpleados'])  echo "selected" ?>><?php echo $ex['Nombre'] ?></option>
+                            <?php
+                            }
+                            ?>
                           </select>
-                          <p class="formulario__input-error">Debe seleccionar un departamento.</p>
+                          <p class="formulario__input-error">Debe seleccionar un cargo.</p>
+                        </div>
+
+                        <!--Grupo: Contraseña-->
+                        <div class="formulario__grupo" id="grupo__contraseña">
+                          <label for="DescripcionCargo" class="formulario__label">Contraseña</label>
+                          <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="Contrasenia" id="Contrasenia" title="Ingresa contraseña" placeholder="Contraseña" required minlength="8" maxlength="15" <?php if ($action != 1 && $action != 2) {
+                                                                                                                                                                                                          echo 'readonly';
+                                                                                                                                                                                                        } ?> value="<?php if (isset($row)) {
+                                                                                                                                                                                                                      echo $row['Contrasenia'];
+                                                                                                                                                                                                                    } ?>">
+                          </div>
+                          <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
                         </div>
 
                         <!--Grupo: Estado-->
@@ -198,22 +206,22 @@
                               <input type="radio" name="Estados_idEstado" title="Seleciona si esta activo" <?php if ($action != 1 && $action != 2) {
                                                                                                               echo 'readonly';
                                                                                                             } ?> value="1" <?php if (isset($row)) {
-                                                                                                                                if ($row['Estados_idEstado'] == 1) { ?> checked="checked" <?php }
-                                                                                                                                                                                      } ?> required>
+                                                                                                                              if ($row['Estados_idEstado'] == 1) { ?> checked="checked" <?php }
+                                                                                                                                                                                    } ?> required>
                               <label for="contactChoice1">Activo</label>
                             </div>
                             <div class="col-sm-6 mb-3 mb-sm-0">
                               <input type="radio" name="Estados_idEstado" title="Selecciona si esta inactivo" <?php if ($action != 1 && $action != 2) {
                                                                                                                 echo 'readonly';
                                                                                                               } ?> value="2" <?php if (isset($row)) {
-                                                                                                                                  if ($row['Estados_idEstado'] == 2) { ?> checked="checked" <?php }
-                                                                                                                                                                                        } ?>>
+                                                                                                                                if ($row['Estados_idEstado'] == 2) { ?> checked="checked" <?php }
+                                                                                                                                                                                      } ?>>
                               <label for="contactChoice2">Inactivo</label>
                             </div>
                           </div>
                         </div>
-                        <!--Submit-->
 
+                        <!--Submit-->
                         <?php if ($action == 1 || $action == 2) { ?>
 
                           <div class="formulario__grupo" id="grupo__departamento">
@@ -235,7 +243,7 @@
                         <!--Cancelar-->
                         <div class="formulario__grupo formulario__grupo-btn-enviar">
                           <div class="col-sm-6 mb-3 mb-sm-0" style=" width: 50vw; margin-left : 0vw;">
-                            <a title="Click si no desea hacer ni una acción" href="TablaCargos.php?idUsuario=<?php echo $Usuario; ?>&Empresas_idEmpresas=<?php echo $Empresa; ?>" class="btn btn-primary btn-user btn-block">
+                            <a title="Click si no desea hacer ni una acción" href="TablaUsuarios.php?idUsuario=<?php echo $Usuario; ?>&Empresas_idEmpresas=<?php echo $Empresa; ?>" class="btn btn-primary btn-user btn-block">
                               Regresar
                             </a>
                           </div>
