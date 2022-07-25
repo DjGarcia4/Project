@@ -385,11 +385,14 @@
               </div>
               <nav>
                 <ul class="useful-links">
-                  <li><a href="#">EMERSON ZAPATA</a></li>
-                  <li><a href="#">DENIS GARCIA</a></li>
-                  <li><a href="#">DULCE SANCHEZ</a></li>
-                  <li><a href="#">ONAN AGUILERA</a></li>
-                  <li><a href="#">DIEGO MOLINA</a></li>
+                  <li><a href="#" style="cursor:default;">EMERSON ZAPATA</a></li>
+                  <li><a href="#" style="cursor:default;">DENIS GARCIA</a></li>
+                  <li><a href="#" style="cursor:default;">DULCE SANCHEZ</a></li>
+                  <li><a href="#" style="cursor:default;">ONAN AGUILERA</a></li>
+                  <li><a href="#" style="cursor:default;">DIEGO MOLINA</a></li>
+                  <li><a href="#" style="cursor:default;">JUAN VILLATORO</a></li>
+                  <li><a href="#" style="cursor:default;">EDITH TOLEDO</a></li>
+                  <li><a href="#" style="cursor:default;">JOHNNY DEEP</a></li>
                 </ul>
               </nav>
             </div>
