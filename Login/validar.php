@@ -19,7 +19,7 @@ if (isset($row['idUsuario']) || isset($row['Empresas_idEmpresas'])) {
 $a->__destruct();
 
 if ($filas) {
-  header("location:../menu.php?idUsuario=$idUser&Empresas_idEmpresas=$idEnt");
+  header("location:../menu/menu.php?idUsuario=$idUser&Empresas_idEmpresas=$idEnt");
 } else {
   include("ERROR.php");
 }
