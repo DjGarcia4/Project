@@ -348,7 +348,7 @@
                         Perfil
                     </a> -->
                 <a class="dropdown-item"
-                  href="/cambioContra.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>">
+                  href="Login/cambioContra.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>">
                   <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                   Cambio de contraseña
                 </a>
