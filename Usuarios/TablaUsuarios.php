@@ -178,7 +178,7 @@
         </div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-          <a class="btn btn-primary" href="../Login/login.php">Cerrar Sesion</a>
+          <a class="btn btn-primary" href="../Login/loginForm.php">Cerrar Sesion</a>
         </div>
       </div>
     </div>
