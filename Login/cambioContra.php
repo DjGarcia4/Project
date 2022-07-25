@@ -12,12 +12,12 @@
   <title>Cambio de contraseña</title>
 
   <!-- FUENTES-->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <!-- CSS-->
-  <link href="css/estilo.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/estilosValidacion.css">
+  <link href="../css/estilo.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estilosValidacion.css">
 
 </head>
 
@@ -26,7 +26,7 @@
   $Usuario = $_GET['idUsuario'];
   $Empresa = $_GET['Empresas_idEmpresas'];
 
-  include 'SqlTools/database.php';
+  include '../SqlTools/database.php';
   $auxiliar = new database();
   $auxiliar->select('usuarios', 'Usuario', "idUsuario = '$Usuario'");
   $nombre = $auxiliar->sql;
@@ -46,7 +46,7 @@
                 <div class="container-fluid">
                   <h1 class="h3 mb-1 text-gray-800">Cambio de contraseña</h1>
                 </div>
-                <img src="img/restablecerContra.png" alt="" height="100"></img>
+                <img src="../img/restablecerContra.png" alt="" height="100"></img>
                 <form class="formulario" id="formulario" method="post">
                   <!--Grupo: Contraseña 1-->
                   <div class="formulario__grupo" id="grupo__contraseña">
@@ -75,7 +75,7 @@
                   <!--Cancelar-->
                   <div class="formulario__grupo formulario__grupo-btn-enviar">
                     <div class="col-sm-6 mb-3 mb-sm-0" style=" width: 50vw; margin-left : 0vw;">
-                      <a title="Click si no desea hacer ni una acción" href="javascript:history.back()" class="btn btn-primary btn-user btn-block">
+                      <a title="Click si no desea hacer ni una acción" href="../javascript:history.back()" class="btn btn-primary btn-user btn-block">
                         Cancel
                       </a>
                     </div>
@@ -90,16 +90,16 @@
   </div>
 
   <!-- JavaScript básico de Bootstrap-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Complemento principal de JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Scripts personalizados para todas las páginas-->
-  <script src="js/sb-admin-2.min.js"></script>
+  <script src="../js/sb-admin-2.min.js"></script>
   <!-- Scripts Validacion de Formulario -->
-  <script src="js/formulario.js"></script>
+  <script src="../js/formulario.js"></script>
 
 </body>
 

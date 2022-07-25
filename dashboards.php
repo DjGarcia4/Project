@@ -304,21 +304,11 @@
           <h1 class="h3 mb-1 text-gray-800">Dashboard</h1>
         </div>
 
-        <div id="chartPosition" style="width: 45%; height: 20%;display: inline-block;"></div>
-        <div id="PieChartEmp" style="width: 45%; height: 20%;display: inline-block;"></div>
-        <div id="sexChart" style="width: 45%; height: 20%;display: inline-block;"></div>
+        <div id="chartPosition" style="position: sticky; width: 90%; height: 50%; margin-bottom: 5%; margin-left: 5%; margin-right: 5%; border: black 1px solid;"></div>
+        <div id="PieChartEmp" style="position: sticky; width: 40%; height: 30%; margin-bottom: 5%; margin-left: 5%; margin-right: 5%; border: black 1px solid;"></div>
+        <div id="sexChart" style="position: sticky; width: 40%; height: 30%; margin-bottom: 5%; margin-left: 5%; margin-right: 5%; border: black 1px solid;"></div>
 
       </div>
-
-      <!-- Footer -->
-      <footer class="sticky-footer bg-white">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Bandersnatch 2022 </span>
-          </div>
-        </div>
-      </footer>
-      <!-- Fin del Footer -->
 
     </div>
     <!-- Envoltorio de fin de contenido -->
