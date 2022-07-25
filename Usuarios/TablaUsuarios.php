@@ -127,7 +127,7 @@
         <div class="container-fluid">
 
           <!-- Encabezado de página -->
-          <h1 class="h3 mb-2 text-gray-800">Ciudades</h1>
+          <h1 class="h3 mb-2 text-gray-800">Usuarios</h1>
           <div class="card shadow mb-4">
 
             <!-- Tablas-->
@@ -210,7 +210,7 @@
   function buscar_datos(sql) {
     $.ajax({
         type: "POST",
-        url: "filtroUsarios.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>",
+        url: "filtroUsuarios.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>",
         data: {
           sql: sql
         },
@@ -227,7 +227,7 @@
   function buscar_estado(point) {
     $.ajax({
         type: "POST",
-        url: "filtroUsarios.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>&state=" + state + "",
+        url: "filtroUsuarios.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>&state=" + state + "",
         data: {
           point: point
         },

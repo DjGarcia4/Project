@@ -12,12 +12,12 @@
   <title>Planilla de Pagos</title>
 
   <!-- FUENTE-->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <!-- CSS-->
-  <link href="css/estilo.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/estilosValidacion.css">
+  <link href="../css/estilo.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estilosValidacion.css">
 
 </head>
 
@@ -40,7 +40,7 @@
                 <!--Inicio de Form-->
                 <h1 class="h4 text-gray-900 mb-2 text-center">¿Olvido su contraseña?</h1>
                 <p class="mb-4 ">Lo entendemos, pasan cosas. ¡Simplemente ingrese su dirección de correo electrónico a continuación y le enviaremos un enlace para restablecer su contraseña!</p>
-                <img src="img/restablecerContra.png" alt="" height="100">
+                <img src="../img/restablecerContra.png" alt="" height="100">
                 <form action="https://formsubmit.co/copapbandersnatch@gmail.com" class="formulario2" id="formulario" method="post">
                   <!--Grupo: Correo-->
                   <div class="formulario__grupo" id="grupo__correo">
@@ -56,7 +56,7 @@
                     <hr>
                     <div class="text-center">
                       <div class="col-sm-200 mb-3 mb-sm-0">
-                        <a class="small " href="Login/loginForm.php">¿Ya tienes un usuario? Inicia sesión</a>
+                        <a class="small " href="../Login/loginForm.php">¿Ya tienes un usuario? Inicia sesión</a>
                       </div>
                     </div>
                   </div>
@@ -73,16 +73,16 @@
   </div>
 
   <!-- JavaScript básico de Bootstrap-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Complemento principal de JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Scripts personalizados para todas las páginas-->
-  <script src="js/sb-admin-2.min.js"></script>
+  <script src="../js/sb-admin-2.min.js"></script>
   <!-- Scripts Validacion de Formulario -->
-  <script src="js/formulario.js"></script>
+  <script src="../js/formulario.js"></script>
 
 </body>
 
