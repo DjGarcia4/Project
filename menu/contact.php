@@ -216,6 +216,7 @@
                 <a href="#"><img src="../img/QR.png" width="200px"></a>
                 <p>¡ESCANEAME PARA MÁS INFORMACIÓN!</p>
               </div>
+              <p>Redes Sociales</p>
               <div class="footer-social-info">
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
@@ -232,11 +233,14 @@
               </div>
               <nav>
                 <ul class="useful-links">
-                  <li><a href="#">EMERSON ZAPATA</a></li>
-                  <li><a href="#">DENIS GARCIA</a></li>
-                  <li><a href="#">DULCE SANCHEZ</a></li>
-                  <li><a href="#">ONAN AGUILERA</a></li>
-                  <li><a href="#">DIEGO MOLINA</a></li>
+                  <li><a href="#" style="cursor:default;">EMERSON ZAPATA</a></li>
+                  <li><a href="#" style="cursor:default;">DENIS GARCIA</a></li>
+                  <li><a href="#" style="cursor:default;">DULCE SANCHEZ</a></li>
+                  <li><a href="#" style="cursor:default;">ONAN AGUILERA</a></li>
+                  <li><a href="#" style="cursor:default;">DIEGO MOLINA</a></li>
+                  <li><a href="#" style="cursor:default;">JUAN VILLATORO</a></li>
+                  <li><a href="#" style="cursor:default;">EDITH TOLEDO</a></li>
+                  <li><a href="#" style="cursor:default;">JOHNNY DEEP</a></li>
                 </ul>
               </nav>
             </div>
