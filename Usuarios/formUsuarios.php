@@ -34,7 +34,6 @@
   include '../SqlTools/database.php';
 
   $Usuario = $_GET['idUsuario'];
-  $idUsuario = $_GET['Usuario'];
 
   $Empresa = $_GET['Empresas_idEmpresas'];
   $action = $_GET['action'];
