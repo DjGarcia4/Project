@@ -58,9 +58,9 @@ if ($table->num_rows > 0) {
         <thead>
         <tr>
         <th>id</th>
-        <th>Num. id</th>
+        <th>Núm. id</th>
         <th>Nombre</th>
-        <th>Telefono</th>
+        <th>Teléfono</th>
         <th>Nacimiento</th>
         <th>Edad</th>
         <th>Sexo</th>
@@ -70,9 +70,9 @@ if ($table->num_rows > 0) {
     <tfoot>
         <tr>
         <th>id</th>
-        <th>Num. id</th>
+        <th>Núm. id</th>
         <th>Nombre</th>
-        <th>Telefono</th>
+        <th>Teléfono</th>
         <th>Nacimiento</th>
         <th>Edad</th>
         <th>Sexo</th>
