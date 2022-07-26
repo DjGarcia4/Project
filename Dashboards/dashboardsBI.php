@@ -145,9 +145,11 @@
         <div class="container-fluid">
           <h1 class="h3 mb-1 text-gray-800">Dashboard</h1>
         </div>
-        <iframe title="DASHBOARD COPAP" width="1140" height="541.25"
-          src="https://app.powerbi.com/reportEmbed?reportId=4225b2c1-88fb-430f-bcf3-9a7e4221e714&autoAuth=true&ctid=303b688a-0a3c-45ad-9fcf-e13a283c1afb&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D"
-          frameborder="0" allowFullScreen="true"></iframe>
+        <?php if ($Empresa == 1) { ?>
+          <iframe title="Dulces Willy wonka" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=23a48a97-5792-4488-804a-7471aa7b0777&autoAuth=true&ctid=303b688a-0a3c-45ad-9fcf-e13a283c1afb&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" allowFullScreen="true"></iframe>
+        <?php } elseif ($Empresa == 2) { ?>
+          <iframe title="DASHBOARD COPAP" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=4225b2c1-88fb-430f-bcf3-9a7e4221e714&autoAuth=true&ctid=303b688a-0a3c-45ad-9fcf-e13a283c1afb&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" allowFullScreen="true"></iframe>
+        <?php } ?>
       </div>
 
     </div>
