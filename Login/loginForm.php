@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../menu/style.css">
   <link rel="stylesheet" href="../css/style2.0.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
   <title>Login</title>
   <link rel="icon" href="../img/bg-img/logo.png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -95,7 +96,7 @@
         <form action="validar.php" method="post" class="inputs-container" style="position:relative;">
           <img src="../img/loginUser.png" width="150">
           <br></br>
-          <div style="display: flex; ">
+          <div style="display: flex;">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="44"
               height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
               stroke-linejoin="round">
@@ -116,6 +117,7 @@
               <path d="M10 11v-2a2 2 0 1 1 4 0v2" />
               <rect x="4" y="4" width="16" height="16" rx="2" />
             </svg>
+            <span class="icon-eye"><i class="fa-solid fa-eye-slash"></i></span>
             <input class="input" type="password" placeholder="Contraseña" name="Contrasenia" required>
           </div>
           <br></br>
@@ -146,6 +148,7 @@
     <script src="../js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="../js/active.js"></script>
+    <script src="../js/formulario.js"></script>
 </body>
 
 
