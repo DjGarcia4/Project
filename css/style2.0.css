@@ -176,3 +176,15 @@
     font-size: 24px;
   }
 } */
+/* eye */
+.icon-eye {
+  position: absolute;
+  right: 20%;
+  top: 62%;
+  cursor: pointer;
+  transition: 0.4s ease all;
+}
+
+.icon-eye:hover {
+  color: orange;
+}
