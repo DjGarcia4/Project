@@ -196,7 +196,7 @@
           <line x1="14" y1="12" x2="15" y2="12" />
           <line x1="14" y1="16" x2="15" y2="16" />
           <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16" />
-        </svg> Departamentos</span>
+        </svg> Deptos</span>
     </a>
     <div id="collapseDepartamentos" class="collapse" aria-labelledby="headingDepartamentos"
       data-parent="#accordionSidebar">

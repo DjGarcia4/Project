@@ -21,11 +21,6 @@
   <link rel="icon" href="../img/Moneda.png">
   <link rel="stylesheet" href="../css/estilosValidacion.css">
 
-  <!--JAVASCRIPT-->
-  <script src="https://code.jquery.com/jquery-1.12.1.js">
-  type = "text/javascript"
-  </script>
-
 </head>
 
 <script src="../SqlTools/confirmationInsert.js"></script>
@@ -380,9 +375,6 @@
   <!-- Complementos de nivel de página -->
   <script src="../vendor/chart.js/Chart.min.js"></script>
 
-  <!-- Scripts personalizados a nivel de página -->
-  <script src="../js/demo/chart-area-demo.js"></script>
-  <script src="../js/demo/chart-pie-demo.js"></script>
   <!-- Scripts Validacion de Formulario -->
   <script src="../js/formulario.js"></script>
 

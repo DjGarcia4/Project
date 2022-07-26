@@ -22,9 +22,6 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
     rel="stylesheet">
 
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
   <!-- Libraries CSS Files -->
   <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="../lib/animate/animate.min.css" rel="stylesheet">
@@ -453,17 +450,8 @@
             </div>
 
             <!-- JavaScript básico de Bootstrap-->
-            <script src="../vendor/jquery/jquery.min.js"></script>
-            <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-            <!-- Complemento principal de JavaScript-->
-            <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
-
-            <!-- Scripts personalizados para todas las páginas-->
-            <script src="../js/sb-admin-2.min.js"></script>
-
-            <!-- Complementos de nivel de página -->
-            <script src="../vendor/chart.js/Chart.min.js"></script>
+            <script src="../vendor/jquery/jquery.min.js" type="text/javascript"></script>
+            <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
 
             <!-- JavaScript básico de Bootstrap-->
             <script src="../vendor/jquery/jquery.min.js"></script>
@@ -483,7 +471,6 @@
             <!-- <div id="preloader"></div> -->
 
             <script src="../lib/jquery/jquery.min.js"></script>
-            <script src="../lib/jquery/jquery-migrate.min.js"></script>
             <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
             <script src="../lib/easing/easing.min.js"></script>
             <script src="../lib/mobile-nav/mobile-nav.js"></script>
