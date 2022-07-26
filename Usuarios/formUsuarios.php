@@ -258,7 +258,7 @@
                         <div class="formulario__grupo" id="grupo__contraseñaU">
                           <label for="contraseñaU" class="formulario__label">Contraseña</label>
                           <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="contraseñaU" id="contraseñaU"
+                            <input type="text" class="formulario__input" name="Contrasenia" id="contraseñaU"
                               title="Ingresa contraseña" placeholder="Contraseña" required minlength="8" maxlength="15"
                               <?php if ($action != 1 && $action != 2) {
                                                                                                                                                                                                           echo 'readonly';
