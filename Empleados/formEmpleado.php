@@ -12,14 +12,16 @@
   <title>Empleados</title>
   <!-- FUENTES-->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
 
   <!-- CSS-->
   <link href="../css/estilo.css" rel="stylesheet">
   <link rel="icon" href="../img/Moneda.png">
   <!--JAVASCRIPT-->
   <script src="https://code.jquery.com/jquery-1.12.1.js">
-    type = "text/javascript"
+  type = "text/javascript"
   </script>
   <link rel="stylesheet" href="../css/estilosValidacion.css">
 </head>
@@ -74,8 +76,9 @@
             <div class="topbar-divider d-none d-sm-block"></div>
             <!-- Nav Item - Información del usuario -->
             <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $name['Usuario'] ?></span>
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $name['Usuario']; ?></span>
                 <img class="img-profile rounded-circle" src="../img/undraw_profile.svg">
               </a>
               <!-- Desplegable - Información del usuario -->
@@ -84,9 +87,43 @@
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Perfil
                                 </a> -->
-                <a class="dropdown-item" href="../Login/cambioContra.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>">
-                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                <a class="dropdown-item"
+                  href="../Login/cambioContra.php?idUsuario=<?php echo $Usuario; ?>&Empresas_idEmpresas=<?php echo $Empresa; ?>">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-replace" width="16"
+                    height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <rect x="3" y="3" width="6" height="6" rx="1" />
+                    <rect x="15" y="15" width="6" height="6" rx="1" />
+                    <path d="M21 11v-3a2 2 0 0 0 -2 -2h-6l3 3m0 -6l-3 3" />
+                    <path d="M3 13v3a2 2 0 0 0 2 2h6l-3 -3m0 6l3 -3" />
+                  </svg>
                   Cambio de contraseña
+                </a>
+                <a class="dropdown-item"
+                  href="../Usuarios/formUsuarios.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>&action=1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-plus" width="16"
+                    height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    <path d="M16 11h6m-3 -3v6" />
+                  </svg>
+                  Crear Usuario
+                </a>
+                <a class="dropdown-item"
+                  href="../Usuarios/TablaUsuarios.php?idUsuario=<?php echo $Usuario; ?>&Empresas_idEmpresas=<?php echo $Empresa; ?>">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="16"
+                    height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                  </svg>
+                  Mostrar usuarios
                 </a>
                 <!-- <a class="dropdown-item" href="#">
                                     <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -94,7 +131,15 @@
                                 </a> -->
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-door-enter" width="16"
+                    height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M13 12v.01" />
+                    <path d="M3 21h18" />
+                    <path d="M5 21v-16a2 2 0 0 1 2 -2h6m4 10.5v7.5" />
+                    <path d="M21 7h-7m3 -3l-3 3l3 3" />
+                  </svg>
                   Cerrar Sesión
                 </a>
               </div>
@@ -139,9 +184,15 @@
                         <div class="formulario__grupo" id="grupo__identidad">
                           <label for="Cedula" class="formulario__label">Identidad</label>
                           <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="Cedula" id="Cedula" title="Ingresa el numero de identidad" <?php if ($action != 1 && $action != 2) echo "readonly" ?> pattern="[01]{1}[0-8]{1}[012]{1}[0-9]{1}[12]{1}[09]{1}[012789]{1}[0-9]{1}[0-9]{5}" onkeypress="return soloNumeros(event)" placeholder="Identidad" value="<?php if (isset($row)) {
+                            <input type="text" class="formulario__input" name="Cedula" id="Cedula"
+                              title="Ingresa el numero de identidad"
+                              <?php if ($action != 1 && $action != 2) echo "readonly" ?>
+                              pattern="[01]{1}[0-8]{1}[012]{1}[0-9]{1}[12]{1}[09]{1}[012789]{1}[0-9]{1}[0-9]{5}"
+                              onkeypress="return soloNumeros(event)" placeholder="Identidad"
+                              value="<?php if (isset($row)) {
                                                                                                                                                                                                                                                                                                                                                                 echo $row['Cedula'];
-                                                                                                                                                                                                                                                                                                                                                              } ?>" required minlength="13" maxlength="13">
+                                                                                                                                                                                                                                                                                                                                                              } ?>"
+                              required minlength="13" maxlength="13">
                           </div>
                           <p class="formulario__input-error">El número de identidad solo puede contener números y el
                             máximo son 13.</p>
@@ -151,11 +202,17 @@
                           <label for="Sexos_idSexo" class="formulario__label">Sexo</label>
                           <div class="formulario__grupo-input">
                             <div class="col-sm-6 mb-3 mb-sm-0">
-                              <input type="radio" name="Sexos_idSexo" id="Sexos_idSexo" title="Selecciona si es hombre" <?php if ($action != 1 && $action != 2) echo "readonly" ?> value="1" <?php if (isset($row)) if ($row['Sexos_idSexo'] == 1) : ?> checked="checked" <?php endif ?> required>
+                              <input type="radio" name="Sexos_idSexo" id="Sexos_idSexo" title="Selecciona si es hombre"
+                                <?php if ($action != 1 && $action != 2) echo "readonly" ?> value="1"
+                                <?php if (isset($row)) if ($row['Sexos_idSexo'] == 1) : ?> checked="checked"
+                                <?php endif ?> required>
                               <label for="contactChoice1">Masculino</label>
                             </div>
                             <div class="col-sm-6 mb-3 mb-sm-0">
-                              <input type="radio" name="Sexos_idSexo" id="Sexos_idSexo" title="Selecciona si es mujer" <?php if ($action != 1 && $action != 2) echo "readonly" ?> value="2" <?php if (isset($row)) if ($row['Sexos_idSexo'] == 2) : ?> checked="checked" <?php endif ?> required>
+                              <input type="radio" name="Sexos_idSexo" id="Sexos_idSexo" title="Selecciona si es mujer"
+                                <?php if ($action != 1 && $action != 2) echo "readonly" ?> value="2"
+                                <?php if (isset($row)) if ($row['Sexos_idSexo'] == 2) : ?> checked="checked"
+                                <?php endif ?> required>
                               <label for="contactChoice2">Femenino</label>
                             </div>
                           </div>
@@ -164,9 +221,13 @@
                         <div class="formulario__grupo" id="grupo__primerNombre">
                           <label for="PrimerNombre" class="formulario__label">Primer Nombre</label>
                           <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="PrimerNombre" id="PrimerNombre" title="Ingresa primer nombre" <?php if ($action != 1 && $action != 2) echo "readonly" ?> onkeypress="return soloLetras(event)" placeholder="Primer Nombre" value="<?php if (isset($row)) {
+                            <input type="text" class="formulario__input" name="PrimerNombre" id="PrimerNombre"
+                              title="Ingresa primer nombre" <?php if ($action != 1 && $action != 2) echo "readonly" ?>
+                              onkeypress="return soloLetras(event)" placeholder="Primer Nombre"
+                              value="<?php if (isset($row)) {
                                                                                                                                                                                                                                                                                     echo $row['PrimerNombre'];
-                                                                                                                                                                                                                                                                                  } ?>" required minlength="3" maxlength="15" onblur="upperCase('PrimerNombre')">
+                                                                                                                                                                                                                                                                                  } ?>"
+                              required minlength="3" maxlength="15" onblur="upperCase('PrimerNombre')">
                           </div>
                           <p class="formulario__input-error">EL primer nombre tiene que ser de 3 a 15 dígitos y solo
                             puede contener
@@ -177,9 +238,14 @@
                         <div class="formulario__grupo" id="grupo__segundoNombre">
                           <label for="SegundoNombre" class="formulario__label">Segundo Nombre</label>
                           <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="SegundoNombre" id="SegundoNombre" title="Ingresa segundo nombre (Es opcional, si no tiene deja vacio)" <?php if ($action != 1 && $action != 2) echo "readonly" ?> onkeypress="return soloLetras(event)" placeholder="Segundo Nombre" value="<?php if (isset($row)) {
+                            <input type="text" class="formulario__input" name="SegundoNombre" id="SegundoNombre"
+                              title="Ingresa segundo nombre (Es opcional, si no tiene deja vacio)"
+                              <?php if ($action != 1 && $action != 2) echo "readonly" ?>
+                              onkeypress="return soloLetras(event)" placeholder="Segundo Nombre"
+                              value="<?php if (isset($row)) {
                                                                                                                                                                                                                                                                                                                               echo $row['SegundoNombre'];
-                                                                                                                                                                                                                                                                                                                            } ?>" minlength="3" maxlength="15" onblur="upperCase('SegundoNombre')">
+                                                                                                                                                                                                                                                                                                                            } ?>"
+                              minlength="3" maxlength="15" onblur="upperCase('SegundoNombre')">
                           </div>
                           <p class="formulario__input-error">EL segundo nombre tiene que ser de 3 a 15 dígitos y solo
                             puede contener
@@ -190,9 +256,13 @@
                         <div class="formulario__grupo" id="grupo__primerApellido">
                           <label for="PrimerApellido" class="formulario__label">Primer Apellido</label>
                           <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="PrimerApellido" id="PrimerApellido" title="Ingresa primer apellido" <?php if ($action != 1 && $action != 2) echo "readonly" ?> onkeypress="return soloLetras(event)" placeholder="Primer Apellido" value="<?php if (isset($row)) {
+                            <input type="text" class="formulario__input" name="PrimerApellido" id="PrimerApellido"
+                              title="Ingresa primer apellido" <?php if ($action != 1 && $action != 2) echo "readonly" ?>
+                              onkeypress="return soloLetras(event)" placeholder="Primer Apellido"
+                              value="<?php if (isset($row)) {
                                                                                                                                                                                                                                                                                             echo $row['PrimerApellido'];
-                                                                                                                                                                                                                                                                                          } ?>" required minlength="3" maxlength="15" onblur="upperCase('PrimerApellido')">
+                                                                                                                                                                                                                                                                                          } ?>"
+                              required minlength="3" maxlength="15" onblur="upperCase('PrimerApellido')">
                           </div>
                           <p class="formulario__input-error">EL primer apellido tiene que ser de 3 a 15 dígitos y solo
                             puede contener
@@ -203,9 +273,14 @@
                         <div class="formulario__grupo" id="grupo__segundoApellido">
                           <label for="SegundoApellido" class="formulario__label">Segundo Apellido</label>
                           <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="SegundoApellido" id="SegundoApellido" title="Ingresa segundo apellido (Es opcional, si no tiene deja vacio)" <?php if ($action != 1 && $action != 2) echo "readonly" ?> onkeypress="return soloLetras(event)" placeholder="Segundo Apellido" value="<?php if (isset($row)) {
+                            <input type="text" class="formulario__input" name="SegundoApellido" id="SegundoApellido"
+                              title="Ingresa segundo apellido (Es opcional, si no tiene deja vacio)"
+                              <?php if ($action != 1 && $action != 2) echo "readonly" ?>
+                              onkeypress="return soloLetras(event)" placeholder="Segundo Apellido"
+                              value="<?php if (isset($row)) {
                                                                                                                                                                                                                                                                                                                                       echo $row['SegundoApellido'];
-                                                                                                                                                                                                                                                                                                                                    } ?>" minlength="3" maxlength="15" onblur="upperCase('SegundoApellido')">
+                                                                                                                                                                                                                                                                                                                                    } ?>"
+                              minlength="3" maxlength="15" onblur="upperCase('SegundoApellido')">
                           </div>
                           <p class="formulario__input-error">EL segundo apellido tiene que ser de 3 a 15 dígitos y solo
                             puede contener
@@ -216,9 +291,13 @@
                         <div class="formulario__grupo" id="grupo__telefono">
                           <label for="Telefono" class="formulario__label">Teléfono</label>
                           <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="Telefono" id="Telefono" title="Ingresa telefono" <?php if ($action != 1 && $action != 2) echo "readonly" ?> pattern="[2389]{1}[0-9]{7}" onkeypress="return soloNumeros(event)" placeholder="Telefono" value="<?php if (isset($row)) {
+                            <input type="text" class="formulario__input" name="Telefono" id="Telefono"
+                              title="Ingresa telefono" <?php if ($action != 1 && $action != 2) echo "readonly" ?>
+                              pattern="[2389]{1}[0-9]{7}" onkeypress="return soloNumeros(event)" placeholder="Telefono"
+                              value="<?php if (isset($row)) {
                                                                                                                                                                                                                                                                                               echo $row['Telefono'];
-                                                                                                                                                                                                                                                                                            } ?>" minlength="8" required maxlength="8">
+                                                                                                                                                                                                                                                                                            } ?>"
+                              minlength="8" required maxlength="8">
                           </div>
                           <p class="formulario__input-error">El télefono solo puede contener números, debe iniciar con
                             2, 3, 8 o 9 y el máximo son 8.</p>
@@ -228,9 +307,13 @@
                         <div class="formulario__grupo" id="grupo__Direccion">
                           <label for="Direccion" class="formulario__label">Dirección</label>
                           <div class="formulario__grupo-input">
-                            <input type="text" class=" formulario__input" name="Direccion" id="Direccion" title="Ingresa dirección" <?php if ($action != 1 && $action != 2) echo "readonly" ?> onkeypress="return soloLetrasYespeciales(event)" placeholder="Direccion" value="<?php if (isset($row)) {
+                            <input type="text" class=" formulario__input" name="Direccion" id="Direccion"
+                              title="Ingresa dirección" <?php if ($action != 1 && $action != 2) echo "readonly" ?>
+                              onkeypress="return soloLetrasYespeciales(event)" placeholder="Direccion"
+                              value="<?php if (isset($row)) {
                                                                                                                                                                                                                                                                                   echo $row['Direccion'];
-                                                                                                                                                                                                                                                                                } ?>" required minlength="3" maxlength="50" onblur="upperCase('Direccion')">
+                                                                                                                                                                                                                                                                                } ?>"
+                              required minlength="3" maxlength="50" onblur="upperCase('Direccion')">
                           </div>
                           <p class="formulario__input-error">La dirección tiene que ser de 3 a 50 dígitos y solo puede
                             contener
@@ -245,11 +328,13 @@
                         ?>
                         <div class="formulario__grupo" id="grupo__Departamentos_idDepartamentos">
                           <label for="Departamentos_idDepartamentos" class="formulario__label">Departamento</label>
-                          <select class="formulario__input" name="Departamentos_idDepartamentos" id="Departamentos_idDepartamentos" title="Seleciona una opcion" <?php if ($action != 1 && $action != 2) echo "readonly" ?> onchange="cambio()">
+                          <select class="formulario__input" name="Departamentos_idDepartamentos"
+                            id="Departamentos_idDepartamentos" title="Seleciona una opcion"
+                            <?php if ($action != 1 && $action != 2) echo "readonly" ?> onchange="cambio()">
                             <option value="">Seleccione un departamento</option>
                             <?php while ($ex = mysqli_fetch_assoc($table)) { ?>
-                              <option value="<?php echo $ex['idDepartamentos']; ?>"><?php echo $ex['DescripcionDepto']; ?>
-                              </option>
+                            <option value="<?php echo $ex['idDepartamentos']; ?>"><?php echo $ex['DescripcionDepto']; ?>
+                            </option>
                             <?php } ?>
                           </select>
                           <p class="formulario__input-error">Debe seleccionar un departamento.</p>
@@ -264,13 +349,15 @@
                         ?>
                         <div class="formulario__grupo" id="grupo__Cargos_idCargos">
                           <label for="Cargos_idCargos" class="formulario__label">Cargo</label>
-                          <select class="formulario__input" name="Cargos_idCargos" id="Cargos_idCargos" title="Selecciona un opcion" <?php if ($action != 1 && $action != 2) echo "readonly" ?> required>
+                          <select class="formulario__input" name="Cargos_idCargos" id="Cargos_idCargos"
+                            title="Selecciona un opcion" <?php if ($action != 1 && $action != 2) echo "readonly" ?>
+                            required>
                             <option value="">Seleccione un cargo</option>
                             <?php if (isset($row)) {
                               while ($ex = mysqli_fetch_assoc($table)) {
                                 if ($row['Cargos_idCargos'] == $ex['idCargo']) { ?>
-                                  <option value=<?php echo $ex['idCargo'] ?> selected><?php echo $ex['DescripcionCargo'] ?>
-                                  </option>
+                            <option value=<?php echo $ex['idCargo'] ?> selected><?php echo $ex['DescripcionCargo'] ?>
+                            </option>
                             <?php
                                 }
                               }
@@ -287,13 +374,18 @@
                         ?>
                         <div class="formulario__grupo" id="grupo__Ciudades_idCiudades">
                           <label for="Ciudades_idCiudades" class="formulario__label">Ciudades</label>
-                          <select class="formulario__input" name="Ciudades_idCiudades" id="Ciudades_idCiudades" title="Selcciona una opcion" <?php if ($action != 1 && $action != 2) echo "readonly" ?> SelectedItem="null" value="<?php if (isset($row)) {
+                          <select class="formulario__input" name="Ciudades_idCiudades" id="Ciudades_idCiudades"
+                            title="Selcciona una opcion" <?php if ($action != 1 && $action != 2) echo "readonly" ?>
+                            SelectedItem="null"
+                            value="<?php if (isset($row)) {
                                                                                                                                                                                                                                       echo $row['Ciudades_idCiudades'];
-                                                                                                                                                                                                                                    } ?>" required>
+                                                                                                                                                                                                                                    } ?>"
+                            required>
                             <option value="" selected>Seleccione una ciudad</option>
                             <?php while ($ex = mysqli_fetch_assoc($table)) { ?>
-                              <option value=<?php echo $ex['idCiudades']; ?> <?php if (isset($row)) if ($row['Ciudades_idCiudades'] == $ex['idCiudades']) echo "selected" ?>>
-                                <?php echo $ex['DescripcionCiudad']; ?></option>
+                            <option value=<?php echo $ex['idCiudades']; ?>
+                              <?php if (isset($row)) if ($row['Ciudades_idCiudades'] == $ex['idCiudades']) echo "selected" ?>>
+                              <?php echo $ex['DescripcionCiudad']; ?></option>
                             <?php } ?>
                           </select>
                           <p class="formulario__input-error">Debe seleccionar una ciudad.</p>
@@ -304,11 +396,17 @@
                           <label for="Estados_idEstado" class="formulario__label">Estado</label>
                           <div class="formulario__grupo">
                             <div class="col-sm-6 mb-3 mb-sm-0">
-                              <input type="radio" name="Estados_idEstado" title="Seleciona si esta activo" <?php if ($action != 1 && $action != 2) echo "readonly" ?> value="1" <?php if (isset($row)) if ($row['Estados_idEstado'] == 1) : ?> checked="checked" <?php endif ?> required>
+                              <input type="radio" name="Estados_idEstado" title="Seleciona si esta activo"
+                                <?php if ($action != 1 && $action != 2) echo "readonly" ?> value="1"
+                                <?php if (isset($row)) if ($row['Estados_idEstado'] == 1) : ?> checked="checked"
+                                <?php endif ?> required>
                               <label for="contactChoice1">Activo</label>
                             </div>
                             <div class="col-sm-6 mb-3 mb-sm-0">
-                              <input type="radio" name="Estados_idEstado" title="Selecciona si esta inactivo" <?php if ($action != 1 && $action != 2) echo "readonly" ?> value="2" <?php if (isset($row)) if ($row['Estados_idEstado'] == 2) : ?> checked="checked" <?php endif; ?> required>
+                              <input type="radio" name="Estados_idEstado" title="Selecciona si esta inactivo"
+                                <?php if ($action != 1 && $action != 2) echo "readonly" ?> value="2"
+                                <?php if (isset($row)) if ($row['Estados_idEstado'] == 2) : ?> checked="checked"
+                                <?php endif; ?> required>
                               <label for="contactChoice2">Inactivo</label>
                             </div>
                           </div>
@@ -318,11 +416,15 @@
                         <div class="formulario__grupo" id="grupo__FechaNacimiento">
                           <label for="FechaNacimiento" class="formulario__label">Fecha de Nacimiento</label>
                           <div class="formulario__grupo-input">
-                            <input type="date" name="FechaNacimiento" id="FechaNacimiento" class="formulario__input" title="Ingresa la fecha de nacimiento" <?php if ($action != 1 && $action != 2) echo "readonly" ?> placeholder="" value="<?php if (isset($row)) {
+                            <input type="date" name="FechaNacimiento" id="FechaNacimiento" class="formulario__input"
+                              title="Ingresa la fecha de nacimiento"
+                              <?php if ($action != 1 && $action != 2) echo "readonly" ?> placeholder=""
+                              value="<?php if (isset($row)) {
                                                                                                                                                                                                                                                 echo $row['FechaNacimiento'];
                                                                                                                                                                                                                                               } else {
                                                                                                                                                                                                                                                 echo '';
-                                                                                                                                                                                                                                              } ?>" required min="1980-01-01" max="2001-12-31">
+                                                                                                                                                                                                                                              } ?>"
+                              required min="1980-01-01" max="2001-12-31">
                           </div>
                           <p class="formulario__input-error">Debe ingresar su fecha de nacimiento.</p>
                         </div>
@@ -331,11 +433,15 @@
                         <div class="formulario__grupo" id="grupo__fechaIngreso">
                           <label for="fechaIngreso" class="formulario__label">Fecha de Ingreso</label>
                           <div class="formulario__grupo-input">
-                            <input type="date" name="FechaIngreso" class="formulario__input" title="Ingresa fecha en la que ingreso" <?php if ($action != 1 && $action != 2) echo "readonly" ?> placeholder="" value="<?php if (isset($row)) {
+                            <input type="date" name="FechaIngreso" class="formulario__input"
+                              title="Ingresa fecha en la que ingreso"
+                              <?php if ($action != 1 && $action != 2) echo "readonly" ?> placeholder=""
+                              value="<?php if (isset($row)) {
                                                                                                                                                                                                                         echo $row['FechaIngreso'];
                                                                                                                                                                                                                       } else {
                                                                                                                                                                                                                         echo date("Y-m-d");
-                                                                                                                                                                                                                      } ?>" required min="2001-12-31">
+                                                                                                                                                                                                                      } ?>"
+                              required min="2001-12-31">
                           </div>
                         </div>
 
@@ -343,9 +449,15 @@
                         <div class="formulario__grupo" id="grupo__correo">
                           <label for="Correo" class="formulario__label">Correo Electrónico</label>
                           <div class="formulario__grupo-input">
-                            <input type="email" class="formulario__input" name="Correo" id="Correo" title="Ingresa el correo elecctronico" <?php if ($action != 1 && $action != 2) echo "readonly" ?> placeholder="Correo Electronico" value="<?php if (isset($row)) {
+                            <input type="email" class="formulario__input" name="Correo" id="Correo"
+                              title="Ingresa el correo elecctronico"
+                              <?php if ($action != 1 && $action != 2) echo "readonly" ?>
+                              placeholder="Correo Electronico"
+                              value="<?php if (isset($row)) {
                                                                                                                                                                                                                                                 echo $row['Correo'];
-                                                                                                                                                                                                                                              } ?>" pattern="[a-z0-9_]+([.][a-z0-9_]+)*@[a-z0-9_]+([.][a-z0-9_]+)*[.][a-z]{1,5}" required minlength="12" maxlength="50" onblur="lowerCase('Correo')">
+                                                                                                                                                                                                                                              } ?>"
+                              pattern="[a-z0-9_]+([.][a-z0-9_]+)*@[a-z0-9_]+([.][a-z0-9_]+)*[.][a-z]{1,5}" required
+                              minlength="12" maxlength="50" onblur="lowerCase('Correo')">
                           </div>
                           <p class="formulario__input-error">El correo solo puede contener letras, números, puntos,
                             guiones y guión bajo.
@@ -356,9 +468,14 @@
                         <div class="formulario__grupo" id="grupo__cuentaBan">
                           <label for="CuentaBancaria" class="formulario__label">Cuenta Bancaria</label>
                           <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="CuentaBancaria" id="CuentaBancaria" title="Ingresa la cuenta bancaria" <?php if ($action != 1 && $action != 2) echo "readonly" ?> onkeypress="return soloNumeros(event)" placeholder="Cuenta Bancaria" value="<?php if (isset($row)) {
+                            <input type="text" class="formulario__input" name="CuentaBancaria" id="CuentaBancaria"
+                              title="Ingresa la cuenta bancaria"
+                              <?php if ($action != 1 && $action != 2) echo "readonly" ?>
+                              onkeypress="return soloNumeros(event)" placeholder="Cuenta Bancaria"
+                              value="<?php if (isset($row)) {
                                                                                                                                                                                                                                                                                                 echo $row['CuentaBancaria'];
-                                                                                                                                                                                                                                                                                              } ?>" required maxlength="15">
+                                                                                                                                                                                                                                                                                              } ?>"
+                              required maxlength="15">
                           </div>
                           <p class="formulario__input-error">La cuenta bancaria solo puede contener números y el máximo
                             son 15.</p>
@@ -368,28 +485,34 @@
 
                         <?php if ($action == 1 || $action == 2) { ?>
 
-                          <!--Submit-->
-                          <div class="formulario__grupo">
-                            <input type="submit" class="btn btn-primary btn-user btn-block" name="submit" title="Click si el formulario esta listo para guardar" value=<?php if ($action == 1) {
+                        <!--Submit-->
+                        <div class="formulario__grupo">
+                          <input type="submit" class="btn btn-primary btn-user btn-block" name="submit"
+                            title="Click si el formulario esta listo para guardar"
+                            value=<?php if ($action == 1) {
                                                                                                                                                                           echo "Crear";
                                                                                                                                                                         } else if ($action == 2) {
                                                                                                                                                                           echo "Modificar";
                                                                                                                                                                         } else {
                                                                                                                                                                           echo "Leer";
-                                                                                                                                                                        } ?> onclick="" <?php if ($action != 1 && $action != 2) echo "readonly" ?>>
-                          </div>
+                                                                                                                                                                        } ?>
+                            onclick="" <?php if ($action != 1 && $action != 2) echo "readonly" ?>>
+                        </div>
 
-                          <!-- Limpiar -->
-                          <div class="formulario__grupo">
-                            <input type="Reset" class="btn btn-primary btn-user btn-block" title="Click si desea limpiar todos los campos" value="Limpiar">
-                          </div>
+                        <!-- Limpiar -->
+                        <div class="formulario__grupo">
+                          <input type="Reset" class="btn btn-primary btn-user btn-block"
+                            title="Click si desea limpiar todos los campos" value="Limpiar">
+                        </div>
 
                         <?php } ?>
 
                         <!--Cancelar-->
                         <div class="formulario__grupo formulario__grupo-btn-enviar">
                           <div class="col-sm-6 mb-3 mb-sm-0" style=" width: 50vw; margin-left : 0vw;">
-                            <a title="Click si no desea hacer ni una acción" href="tablas.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>" class="btn btn-primary btn-user btn-block">
+                            <a title="Click si no desea hacer ni una acción"
+                              href="tablas.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>"
+                              class="btn btn-primary btn-user btn-block">
                               Regresar
                             </a>
                           </div>
@@ -426,7 +549,8 @@
   </a>
 
   <!-- Cierre de sesión modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -469,36 +593,36 @@
 </html>
 
 <script type="text/javascript">
-  var valid;
+var valid;
 
-  function recargarLista() {
-    var x = document.getElementById("Departamentos_idDepartamentos").value;
-    $.ajax({
-      type: "POST",
-      url: "datos.php",
-      data: "dpto=" + x,
-      success: function(r) {
-        $('#Cargos_idCargos').html(r);
-      }
-    });
-  }
-
-  function cambio() {
-    recargarLista();
-  }
-
-  function valid() {
-    var x = document.getElementById("#Telefono").value();
-
-    if (x.substring(0, 1) != '2' || x.substring(0, 1) != '9' || x.substring(0, 1) != '8') {
-
-    }
-  }
-
-  $("#Telefono").on("change", function() {
-    var x = document.getElementById("#Telefono");
-    if (x.substring(0, 1) != '2' || x.substring(0, 1) != '9' || x.substring(0, 1) != '8') {
-      valid = 0;
+function recargarLista() {
+  var x = document.getElementById("Departamentos_idDepartamentos").value;
+  $.ajax({
+    type: "POST",
+    url: "datos.php",
+    data: "dpto=" + x,
+    success: function(r) {
+      $('#Cargos_idCargos').html(r);
     }
   });
+}
+
+function cambio() {
+  recargarLista();
+}
+
+function valid() {
+  var x = document.getElementById("#Telefono").value();
+
+  if (x.substring(0, 1) != '2' || x.substring(0, 1) != '9' || x.substring(0, 1) != '8') {
+
+  }
+}
+
+$("#Telefono").on("change", function() {
+  var x = document.getElementById("#Telefono");
+  if (x.substring(0, 1) != '2' || x.substring(0, 1) != '9' || x.substring(0, 1) != '8') {
+    valid = 0;
+  }
+});
 </script>

@@ -69,7 +69,7 @@
                 <ul>
                   <li><a href="../menu/Modulos.php">Módulos o Servicios</a></li>
                   <li><a href="about-us.php">Sobre Nosotros</a></li>
-                  <li><a href="contact.php">Contactanos</a></li>
+                  <li><a href="contact.php">Contáctanos</a></li>
                 </ul>
               </div>
               <!-- Nav End -->

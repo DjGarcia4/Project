@@ -53,7 +53,7 @@
                 <ul>
                   <li><a href="../menu/Modulos.php">Módulos o Servicios</a></li>
                   <li><a href="menu/about-us.php">Sobre Nosotros</a></li>
-                  <li><a href="menu/contact.php">Contactanos</a></li>
+                  <li><a href="menu/contact.php">Contáctanos</a></li>
                 </ul>
               </div>
               <!-- Nav End -->
@@ -161,7 +161,7 @@
             </div>
             <div class="course-content">
               <h4>CREACIÓN DE PLANLLAS</h4>
-              <p>Crea planillas de pago que te proporcionaran un control adecuado de pagos</p>
+              <p>CREA PLANILLAS DE PAGO QUE TE PROPORCIONARAN UN CONTROL ADECUADO DE PAGOS</p>
             </div>
           </div>
         </div>
@@ -197,9 +197,9 @@
             </div>
             <div class="course-content">
 
-              <h4>AACCESO FÁCIL, RÁPIDO PERO TAMBIÉN SEGURO</h4>
-              <p>Puedes acceder a tu información a cualquier hora y en cualquier lugar de una forma segura, rápida y
-                confiable</p>
+              <h4>ACCESO FÁCIL, RÁPIDO PERO TAMBIÉN SEGURO</h4>
+              <p>PUEDES ACCEDER A TU INFORMACIÓN A CUALQUIER HORA Y EN CUALQUIER LUGAR DE UNA FORMA SEGURA, RÁPIDA Y
+                CONFIABLE</p>
 
 
             </div>
@@ -213,7 +213,7 @@
             </div>
             <div class="course-content">
               <h4>RESPALDAMOS TU INFORMACIÓN</h4>
-              <p>Todos tus registros son debidamente respaldados</p>
+              <p>TODOS TUS REGISTROS SON DEBIDAMENTE RESPALDADOS</p>
             </div>
           </div>
         </div>
@@ -224,8 +224,8 @@
               <i class="icon-customer-service"></i>
             </div>
             <div class="course-content">
-              <h4>Atención las 24 horas</h4>
-              <p>Te ofrecemos atención personalizada las 24 horas del dia</p>
+              <h4>ATENCIÓN LAS 24 HORAS</h4>
+              <p>TE OFRECEMOS ATENCIÓN PERSONALIZADA LAS 24 HORAS DEL DIA</p>
             </div>
           </div>
         </div>
@@ -235,8 +235,7 @@
   <!-- ##### FIN AREA DE SERVICIOS ##### -->
 
   <!-- ##### CLIENTES SATISFECHOS ##### -->
-  <div class="testimonials-area section-padding-100 bg-img bg-overlay"
-    style="background-image: url(../img/bg-img/back.jpg);">
+  <div class="testimonials-area section-padding-100 bg-img bg-overlay" style="background-image: url(../img/bg-img/back.jpg);">
     <div class="container">
 
       <div class="row">
@@ -317,7 +316,7 @@
         <div class="row">
           <div class="col-12">
             <div class="cta-content d-flex align-items-center justify-content-between flex-wrap">
-              <h3>¿Que esperas para formar parte de COPAP? ¡NO LO PIENSES MAS!</h3>
+              <h3>¿Qué esperas para formar parte de COPAP? ¡NO LO PIENSES MAS!</h3>
               <a href="menu/Modulos.php" class="btn academy-btn">VER MÁS</a>
 
             </div>
@@ -405,11 +404,9 @@
           <div class="">
             <div class="">
               <div>
-                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
                   <defs>
-                    <path id="gentle-wave"
-                      d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
                   </defs>
                   <g class="parallax">
                     <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
@@ -420,9 +417,8 @@
                   <p>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     Copyright &copy;<script>
-                    document.write(new Date().getFullYear());
-                    </script> All rights reserved | This template is made with <i class="fa fa-heart-o"
-                      aria-hidden="true"></i> by <a href="" target="_blank">COPAP</a>
+                      document.write(new Date().getFullYear());
+                    </script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="" target="_blank">COPAP</a>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                   </p>
                 </svg>
