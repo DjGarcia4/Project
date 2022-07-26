@@ -59,7 +59,7 @@
 
 
                   <li><a href="about-us.php">Sobre Nosotros</a></li>
-                  <li><a href="contact.php">Contactanos</a></li>
+                  <li><a href="contact.php">Contáctanos</a></li>
                 </ul>
               </div>
               <!-- Nav End -->
@@ -83,7 +83,7 @@
   <!-- ##### Breadcumb Area Start ##### -->
   <div class="breadcumb-area bg-img" style="background-image: url(../img/bg-img/breadcumb.jpg);">
     <div class="bradcumbContent">
-      <h2>CONTACTANOS</h2>
+      <h2>CONTÁCTANOS</h2>
     </div>
   </div>
   <!-- ##### Breadcumb Area End ##### -->
@@ -103,7 +103,7 @@
                   <div class="section-heading text-left">
                     <span>COPAP</span>
                     <div style="text-align:center; margin: top 200px;">
-                      <h3>CONTACTANOS</h3>
+                      <h3>CONTÁCTANOS</h3>
                       <hr style="border:none;">
                       <img src="../img/contactanosC.png" alt="" width="200">
                       <hr>
@@ -145,7 +145,7 @@
                     </div>
 
                     <div class="formulario__grupo" id="grupo__correo">
-                      <label for="Correo" class="formulario__label">Correo Elecronico</label>
+                      <label for="Correo" class="formulario__label">Correo Eléctronico</label>
                       <div class="formulario__grupo-input">
                         <input type="email" class="formulario__input" name="Correo" id="Correo"
                           title="Ingresa el correo elecctronico" placeholder="Correo Electronico"
