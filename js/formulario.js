@@ -19,6 +19,7 @@ const expresiones = {
   nombrec: /^[a-zA-ZÀ-ÿ\s]{12,50}$/,
   mensaje: /^[a-zA-ZÀ-ÿ0-9\s.,#-]{8,150}$/,
   contraseña: /^.{8,15}$/,
+  user: /^[a-zA-Z0-9]{4,12}$/,
 };
 
 const validarFormulario = (e) => {
@@ -102,6 +103,15 @@ const validarFormulario = (e) => {
       break;
     case "contraseña2":
       validarContraseña2();
+      break;
+    case "NombreUsuario":
+      validarCampo(expresiones.user, e.target, "Usuario");
+      break;
+    case "contraseñaU":
+      validarCampo(expresiones.contraseña, e.target, "contraseñaU");
+      break;
+    case "Empleado_idEmpleados":
+      validarSelect("Empleado_idEmpleados");
       break;
   }
 };

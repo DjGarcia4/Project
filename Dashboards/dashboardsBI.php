@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <meta charset="utf-8">
@@ -11,14 +12,16 @@
   <title>Dashboard</title>
   <!-- FUENTES-->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
 
   <!-- CSS-->
   <link href="../css/estilo.css" rel="stylesheet">
   <link rel="icon" href="../img/Moneda.png">
   <!--JAVASCRIPT-->
   <script src="https://code.jquery.com/jquery-1.12.1.js">
-    type = "text/javascript"
+  type = "text/javascript"
   </script>
   <link rel="stylesheet" href="../css/estilosValidacion.css">
 </head>
@@ -64,8 +67,9 @@
             <div class="topbar-divider d-none d-sm-block"></div>
             <!-- Nav Item - Información del usuario -->
             <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $name['Usuario'] ?></span>
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $name['Usuario']; ?></span>
                 <img class="img-profile rounded-circle" src="../img/undraw_profile.svg">
               </a>
               <!-- Desplegable - Información del usuario -->
@@ -74,9 +78,43 @@
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Perfil
                                 </a> -->
-                <a class="dropdown-item" href="../cambioContra.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>">
-                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                <a class="dropdown-item"
+                  href="../Login/cambioContra.php?idUsuario=<?php echo $Usuario; ?>&Empresas_idEmpresas=<?php echo $Empresa; ?>">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-replace" width="16"
+                    height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <rect x="3" y="3" width="6" height="6" rx="1" />
+                    <rect x="15" y="15" width="6" height="6" rx="1" />
+                    <path d="M21 11v-3a2 2 0 0 0 -2 -2h-6l3 3m0 -6l-3 3" />
+                    <path d="M3 13v3a2 2 0 0 0 2 2h6l-3 -3m0 6l3 -3" />
+                  </svg>
                   Cambio de contraseña
+                </a>
+                <a class="dropdown-item"
+                  href="../Usuarios/formUsuarios.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>&action=1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-plus" width="16"
+                    height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    <path d="M16 11h6m-3 -3v6" />
+                  </svg>
+                  Crear Usuario
+                </a>
+                <a class="dropdown-item"
+                  href="../Usuarios/TablaUsuarios.php?idUsuario=<?php echo $Usuario; ?>&Empresas_idEmpresas=<?php echo $Empresa; ?>">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="16"
+                    height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                  </svg>
+                  Mostrar usuarios
                 </a>
                 <!-- <a class="dropdown-item" href="#">
                                     <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -84,8 +122,16 @@
                                 </a> -->
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Cerrar Sesion
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-door-enter" width="16"
+                    height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M13 12v.01" />
+                    <path d="M3 21h18" />
+                    <path d="M5 21v-16a2 2 0 0 1 2 -2h6m4 10.5v7.5" />
+                    <path d="M21 7h-7m3 -3l-3 3l3 3" />
+                  </svg>
+                  Cerrar Sesión
                 </a>
               </div>
             </li>
@@ -99,7 +145,9 @@
         <div class="container-fluid">
           <h1 class="h3 mb-1 text-gray-800">Dashboard</h1>
         </div>
-        <iframe title="DASHBOARD COPAP" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=4225b2c1-88fb-430f-bcf3-9a7e4221e714&autoAuth=true&ctid=303b688a-0a3c-45ad-9fcf-e13a283c1afb&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe title="DASHBOARD COPAP" width="1140" height="541.25"
+          src="https://app.powerbi.com/reportEmbed?reportId=4225b2c1-88fb-430f-bcf3-9a7e4221e714&autoAuth=true&ctid=303b688a-0a3c-45ad-9fcf-e13a283c1afb&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D"
+          frameborder="0" allowFullScreen="true"></iframe>
       </div>
 
     </div>
@@ -114,7 +162,8 @@
   </a>
 
   <!-- Cierre de sesión modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -157,4 +206,5 @@
   <script src="../js/canvasjs.min.js"></script>
 
 </body>
+
 </html>

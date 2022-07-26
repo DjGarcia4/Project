@@ -13,7 +13,9 @@
 
   <!-- FUENTES-->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
 
   <!-- CSS-->
   <link href="../css/estilo.css" rel="stylesheet">
@@ -58,7 +60,8 @@
           <!-- Búsqueda en la barra superior -->
           <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" title="Ingrese dato a buscar" placeholder=" Buscar..." aria-label="Search" aria-describedby="basic-addon2" name="filtro" id="filtro">
+              <input type="text" class="form-control bg-light border-0 small" title="Ingrese dato a buscar"
+                placeholder=" Buscar..." aria-label="Search" aria-describedby="basic-addon2" name="filtro" id="filtro">
               <div class="input-group-append">
                 <button class="btn btn-primary" type="button" title="Buscar">
                   <i class="fas fa-search fa-sm"></i>
@@ -69,7 +72,8 @@
           <!--Estado-->
           <form class="d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="formulario__grupo" id="grupo__direccion">
-              <select class="custom-select form-control" name="estado_Depto" id="estado_Depto" title="Seleccione opcion para buscar por estado">
+              <select class="custom-select form-control" name="estado_Depto" id="estado_Depto"
+                title="Seleccione opcion para buscar por estado">
                 <option value="1" selected>Activos</option>
                 <option value="2">Inactivos</option>
               </select>
@@ -81,7 +85,8 @@
 
             <!-- Nav Item - Search Dropdown (Visible Only XS) -->
             <li class="nav-item dropdown no-arrow d-sm-none">
-              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-search fa-fw"></i>
               </a>
 
@@ -91,8 +96,9 @@
 
             <!-- Nav Item - Información del usuario -->
             <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $name['Usuario'] ?></span>
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $name['Usuario']; ?></span>
                 <img class="img-profile rounded-circle" src="../img/undraw_profile.svg">
               </a>
               <!-- Desplegable - Información del usuario -->
@@ -101,9 +107,43 @@
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Perfil
                                 </a> -->
-                <a class="dropdown-item" href="../Login/cambioContra.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>">
-                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                <a class="dropdown-item"
+                  href="../Login/cambioContra.php?idUsuario=<?php echo $Usuario; ?>&Empresas_idEmpresas=<?php echo $Empresa; ?>">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-replace" width="16"
+                    height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <rect x="3" y="3" width="6" height="6" rx="1" />
+                    <rect x="15" y="15" width="6" height="6" rx="1" />
+                    <path d="M21 11v-3a2 2 0 0 0 -2 -2h-6l3 3m0 -6l-3 3" />
+                    <path d="M3 13v3a2 2 0 0 0 2 2h6l-3 -3m0 6l3 -3" />
+                  </svg>
                   Cambio de contraseña
+                </a>
+                <a class="dropdown-item"
+                  href="../Usuarios/formUsuarios.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>&action=1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-plus" width="16"
+                    height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    <path d="M16 11h6m-3 -3v6" />
+                  </svg>
+                  Crear Usuario
+                </a>
+                <a class="dropdown-item"
+                  href="../Usuarios/TablaUsuarios.php?idUsuario=<?php echo $Usuario; ?>&Empresas_idEmpresas=<?php echo $Empresa; ?>">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="16"
+                    height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                  </svg>
+                  Mostrar usuarios
                 </a>
                 <!-- <a class="dropdown-item" href="#">
                                     <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -111,7 +151,15 @@
                                 </a> -->
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-door-enter" width="16"
+                    height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M13 12v.01" />
+                    <path d="M3 21h18" />
+                    <path d="M5 21v-16a2 2 0 0 1 2 -2h6m4 10.5v7.5" />
+                    <path d="M21 7h-7m3 -3l-3 3l3 3" />
+                  </svg>
                   Cerrar Sesión
                 </a>
               </div>
@@ -164,7 +212,8 @@
   </a>
 
   <!-- Cierre de sesión modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -204,56 +253,57 @@
 
 </html>
 <script>
-  $(buscar_datos());
+$(buscar_datos());
 
-  function buscar_datos(sql) {
-    $.ajax({
-        type: "POST",
-        url: "filtroDepartamentos.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>",
-        data: {
-          sql: sql
-        },
-        dataType: "html",
-      })
-      .done(function(ans) {
-        $("#TableInfo").html(ans);
-      })
-      .fail(function() {
-        console.log("Fail")
-      })
+function buscar_datos(sql) {
+  $.ajax({
+      type: "POST",
+      url: "filtroDepartamentos.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>",
+      data: {
+        sql: sql
+      },
+      dataType: "html",
+    })
+    .done(function(ans) {
+      $("#TableInfo").html(ans);
+    })
+    .fail(function() {
+      console.log("Fail")
+    })
+}
+
+function buscar_estado(point) {
+  $.ajax({
+      type: "POST",
+      url: "filtroDepartamentos.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>&state=" +
+        state + "",
+      data: {
+        point: point
+      },
+      dataType: "html"
+    })
+    .done(function(ans) {
+      $("#TableInfo").html(ans);
+    })
+    .fail(function() {
+      console.log("Fail")
+    })
+}
+
+$("#filtro").on('keyup', function() {
+  var value = $(this).val();
+
+  if (value != "") {
+    buscar_datos(value);
+  } else {
+    buscar_datos();
   }
+});
 
-  function buscar_estado(point) {
-    $.ajax({
-        type: "POST",
-        url: "filtroDepartamentos.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>&state=" + state + "",
-        data: {
-          point: point
-        },
-        dataType: "html"
-      })
-      .done(function(ans) {
-        $("#TableInfo").html(ans);
-      })
-      .fail(function() {
-        console.log("Fail")
-      })
-  }
+$("#estado_Depto").on("change", function() {
+  var value = $(this).val();
+  buscar_estado(value);
+});
 
-  $("#filtro").on('keyup', function() {
-    var value = $(this).val();
-
-    if (value != "") {
-      buscar_datos(value);
-    } else {
-      buscar_datos();
-    }
-  });
-
-  $("#estado_Depto").on("change", function() {
-    var value = $(this).val();
-    buscar_estado(value);
-  });
-
-  var state = $("#estado_Depto").val();
+var state = $("#estado_Depto").val();
 </script>

@@ -12,7 +12,9 @@
   <title>Cargo</title>
   <!-- FUENTES-->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
 
   <!-- CSS-->
   <link href="../css/estilo.css" rel="stylesheet">
@@ -21,7 +23,7 @@
 
   <!--JAVASCRIPT-->
   <script src="https://code.jquery.com/jquery-1.12.1.js">
-    type = "text/javascript"
+  type = "text/javascript"
   </script>
 
 </head>
@@ -78,7 +80,8 @@
             <div class="topbar-divider d-none d-sm-block"></div>
             <!-- Nav Item - Información del usuario -->
             <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $name['Usuario']; ?></span>
                 <img class="img-profile rounded-circle" src="../img/undraw_profile.svg">
               </a>
@@ -88,9 +91,43 @@
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Perfil
                                 </a> -->
-                <a class="dropdown-item" href="../Login/cambioContra.php?idUsuario=<?php echo $Usuario; ?>&Empresas_idEmpresas=<?php echo $Empresa; ?>">
-                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                <a class="dropdown-item"
+                  href="../Login/cambioContra.php?idUsuario=<?php echo $Usuario; ?>&Empresas_idEmpresas=<?php echo $Empresa; ?>">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-replace" width="16"
+                    height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <rect x="3" y="3" width="6" height="6" rx="1" />
+                    <rect x="15" y="15" width="6" height="6" rx="1" />
+                    <path d="M21 11v-3a2 2 0 0 0 -2 -2h-6l3 3m0 -6l-3 3" />
+                    <path d="M3 13v3a2 2 0 0 0 2 2h6l-3 -3m0 6l3 -3" />
+                  </svg>
                   Cambio de contraseña
+                </a>
+                <a class="dropdown-item"
+                  href="../Usuarios/formUsuarios.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>&action=1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-plus" width="16"
+                    height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    <path d="M16 11h6m-3 -3v6" />
+                  </svg>
+                  Crear Usuario
+                </a>
+                <a class="dropdown-item"
+                  href="../Usuarios/TablaUsuarios.php?idUsuario=<?php echo $Usuario; ?>&Empresas_idEmpresas=<?php echo $Empresa; ?>">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="16"
+                    height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                  </svg>
+                  Mostrar usuarios
                 </a>
                 <!-- <a class="dropdown-item" href="#">
                                     <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -98,7 +135,15 @@
                                 </a> -->
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-door-enter" width="16"
+                    height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M13 12v.01" />
+                    <path d="M3 21h18" />
+                    <path d="M5 21v-16a2 2 0 0 1 2 -2h6m4 10.5v7.5" />
+                    <path d="M21 7h-7m3 -3l-3 3l3 3" />
+                  </svg>
                   Cerrar Sesión
                 </a>
               </div>
@@ -145,24 +190,36 @@
                         <div class="formulario__grupo" id="grupo__DescripcionCargo">
                           <label for="DescripcionCargo" class="formulario__label">Nombre del Cargo</label>
                           <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="DescripcionCargo" id="DescripcionCargo" title="Ingresa nombre de cargo" <?php if ($action != 1 && $action != 2) {
+                            <input type="text" class="formulario__input" name="DescripcionCargo" id="DescripcionCargo"
+                              title="Ingresa nombre de cargo"
+                              <?php if ($action != 1 && $action != 2) {
                                                                                                                                                           echo 'readonly';
-                                                                                                                                                        } ?> onkeypress="return soloLetras(event)" onblur="upperCase('DescripcionCargo')" placeholder="Nombre de Cargo" value="<?php if (isset($row)) {
-                                                                                                                                                                                                                                                                                    echo $row['DescripcionCargo'];
-                                                                                                                                                                                                                                                                                  } ?>" required minlength="5" maxlength="30">
+                                                                                                                                                        } ?>
+                              onkeypress="return soloLetras(event)" onblur="upperCase('DescripcionCargo')"
+                              placeholder="Nombre de Cargo"
+                              value="<?php if (isset($row)) {
+                                                                                                                                                                                                                                                                                  echo $row['DescripcionCargo'];
+                                                                                                                                                                                                                                                                                } ?>"
+                              required minlength="5" maxlength="30">
                           </div>
-                          <p class="formulario__input-error">La descripción de cargo solo acepta letras y el máximo son 30.</p>
+                          <p class="formulario__input-error">La descripción de cargo solo acepta letras y el máximo son
+                            30.</p>
                         </div>
 
                         <!--Grupo: Salario-->
                         <div class="formulario__grupo" id="grupo__Salario">
                           <label for="Salario" class="formulario__label">Salario</label>
                           <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="Salario" id="Salario" title="Ingresa salario" <?php if ($action != 1 && $action != 2) {
+                            <input type="text" class="formulario__input" name="Salario" id="Salario"
+                              title="Ingresa salario"
+                              <?php if ($action != 1 && $action != 2) {
                                                                                                                                 echo 'readonly';
-                                                                                                                              } ?> onkeypress="return soloNumeros(event)" placeholder="Salario" value="<?php if (isset($row)) {
-                                                                                                                                                                                                            echo $row['Salario'];
-                                                                                                                                                                                                          } ?>" required minlength="3" maxlength="7">
+                                                                                                                              } ?>
+                              onkeypress="return soloNumeros(event)" placeholder="Salario"
+                              value="<?php if (isset($row)) {
+                                                                                                                                                                                                          echo $row['Salario'];
+                                                                                                                                                                                                        } ?>"
+                              required minlength="3" maxlength="7">
                           </div>
                           <p class="formulario__input-error">El salario solo acepta números.</p>
                         </div>
@@ -175,16 +232,20 @@
                         ?>
                         <div class="formulario__grupo" id="grupo__Departamentos_idDepartamentos">
                           <label for="Departamentos_idDepartamentos" class="formulario__label">Departamento</label>
-                          <select class="formulario__input" name="Departamentos_idDepartamentos" id="Departamentos_idDepartamentos" title="Seleciona una opcion" <?php if ($action != 1 && $action != 2) {
+                          <select class="formulario__input" name="Departamentos_idDepartamentos"
+                            id="Departamentos_idDepartamentos" title="Seleciona una opcion"
+                            <?php if ($action != 1 && $action != 2) {
                                                                                                                                                                     echo 'readonly';
-                                                                                                                                                                  } ?> value="" required>
+                                                                                                                                                                  } ?> value=""
+                            required>
                             <option value="">Selecciona un departamento</option>
                             <?php while ($ex = mysqli_fetch_assoc($table)) { ?>
-                              <option value=<?php echo $ex['idDepartamentos']; ?> <?php if (isset($row)) {
+                            <option value=<?php echo $ex['idDepartamentos']; ?> <?php if (isset($row)) {
                                                                                     if ($row['Departamentos_idDepartamentos'] == $ex['idDepartamentos']) {
                                                                                       echo 'selected';
                                                                                     }
-                                                                                  } ?>><?php echo $ex['DescripcionDepto']; ?></option>
+                                                                                  } ?>>
+                              <?php echo $ex['DescripcionDepto']; ?></option>
                             <?php } ?>
                           </select>
                           <p class="formulario__input-error">Debe seleccionar un departamento.</p>
@@ -197,17 +258,26 @@
                             <div class="col-sm-6 mb-3 mb-sm-0">
                               <input type="radio" name="Estados_idEstado" title="Seleciona si esta activo" <?php if ($action != 1 && $action != 2) {
                                                                                                               echo 'readonly';
-                                                                                                            } ?> value="1" <?php if (isset($row)) {
-                                                                                                                                if ($row['Estados_idEstado'] == 1) { ?> checked="checked" <?php }
-                                                                                                                                                                                      } ?> required>
+                                                                                                            } ?>
+                                value="1"
+                                <?php if (isset($row)) {
+                                                                                                                              if ($row['Estados_idEstado'] == 1) { ?>
+                                checked="checked"
+                                <?php }
+                                                                                                                                                                                    } ?>
+                                required>
                               <label for="contactChoice1">Activo</label>
                             </div>
                             <div class="col-sm-6 mb-3 mb-sm-0">
                               <input type="radio" name="Estados_idEstado" title="Selecciona si esta inactivo" <?php if ($action != 1 && $action != 2) {
                                                                                                                 echo 'readonly';
-                                                                                                              } ?> value="2" <?php if (isset($row)) {
-                                                                                                                                  if ($row['Estados_idEstado'] == 2) { ?> checked="checked" <?php }
-                                                                                                                                                                                        } ?>>
+                                                                                                              } ?>
+                                value="2"
+                                <?php if (isset($row)) {
+                                                                                                                                if ($row['Estados_idEstado'] == 2) { ?>
+                                checked="checked"
+                                <?php }
+                                                                                                                                                                                      } ?>>
                               <label for="contactChoice2">Inactivo</label>
                             </div>
                           </div>
@@ -216,26 +286,31 @@
 
                         <?php if ($action == 1 || $action == 2) { ?>
 
-                          <div class="formulario__grupo" id="grupo__departamento">
-                            <input type="submit" class="btn btn-primary btn-user btn-block" name="submit" title="Click si el formulario esta listo para guardar" value=<?php if ($action == 1) {
+                        <div class="formulario__grupo" id="grupo__departamento">
+                          <input type="submit" class="btn btn-primary btn-user btn-block" name="submit"
+                            title="Click si el formulario esta listo para guardar"
+                            value=<?php if ($action == 1) {
                                                                                                                                                                           echo 'Crear';
                                                                                                                                                                         } elseif ($action == 2) {
                                                                                                                                                                           echo 'Modificar';
                                                                                                                                                                         } else {
                                                                                                                                                                           echo 'Leer';
                                                                                                                                                                         } ?>>
-                          </div>
-                          <!--Limpiar-->
-                          <div class="formulario__grupo" id="grupo__departamento">
-                            <input type="Reset" class="btn btn-primary btn-user btn-block" title="Click si desea limpiar todos los campos" value="Limpiar">
-                          </div>
+                        </div>
+                        <!--Limpiar-->
+                        <div class="formulario__grupo" id="grupo__departamento">
+                          <input type="Reset" class="btn btn-primary btn-user btn-block"
+                            title="Click si desea limpiar todos los campos" value="Limpiar">
+                        </div>
 
                         <?php } ?>
 
                         <!--Cancelar-->
                         <div class="formulario__grupo formulario__grupo-btn-enviar">
                           <div class="col-sm-6 mb-3 mb-sm-0" style=" width: 50vw; margin-left : 0vw;">
-                            <a title="Click si no desea hacer ni una acción" href="TablaCargos.php?idUsuario=<?php echo $Usuario; ?>&Empresas_idEmpresas=<?php echo $Empresa; ?>" class="btn btn-primary btn-user btn-block">
+                            <a title="Click si no desea hacer ni una acción"
+                              href="TablaCargos.php?idUsuario=<?php echo $Usuario; ?>&Empresas_idEmpresas=<?php echo $Empresa; ?>"
+                              class="btn btn-primary btn-user btn-block">
                               Regresar
                             </a>
                           </div>
@@ -272,7 +347,8 @@
   </a>
 
   <!-- Cierre de sesión modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
