@@ -36,7 +36,7 @@ if ($table->num_rows > 0) {
         <thead>
         <tr>
         <th>id</th>
-        <th>Descripcion Cargo</th>
+        <th>Descripción Cargo</th>
         <th>Salario</th>
         <th>Departamentos</th>
         <th scope="col" colspan="3">Accion</th>
@@ -46,7 +46,7 @@ if ($table->num_rows > 0) {
         <tr>
         <tr>
         <th>id</th>
-        <th>Descripcion Cargo</th>
+        <th>Descripción Cargo</th>
         <th>Salario</th>
         <th>Departamentos</th>
         <th scope="col" colspan="3">Accion</th>

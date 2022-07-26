@@ -161,7 +161,7 @@
                 <h2>Bienvenido a <br><span>COPAP</span><br>¿Listo para comenzar?</h2>
                 <div>
                   <a href="#services" class="btn-services scrollto">Servicios</a>
-                  <a href="#portfolio" class="btn-services scrollto">Galeria</a>
+                  <a href="#portfolio" class="btn-services scrollto">Galería</a>
                   <a href="../Manual-del-Usuario.html" target="_blank" class=" btn-services scrollto"">Manual</a>
                 </div>
               </div>
@@ -177,7 +177,7 @@
 
                         <header class="section-header">
                           <h3>¿Necesitas ayuda para usar COPAP?</h3>
-                          <p>Conoce mas sobre </p>
+                          <p>Conoce más sobre </p>
                           <p></p>
                         </header>
                         <br></br>
@@ -199,7 +199,7 @@
                               <h4 class="title"><a
                                   href="../Planilla/creacionPlanilla.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>">Crear
                                   Nueva Planilla</a></h4>
-                              <p class="description">Generar una nueva planilla de pago es mucho mas facil de lo que te
+                              <p class="description">Generar una nueva planilla de pago es mucho más fácil de lo que te
                                 imaginas
                               </p>
                             </div>
@@ -212,7 +212,7 @@
                               <h4 class="title"><a
                                   href="../Empleados/tablas.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>">Empleados</a>
                               </h4>
-                              <p class="description">Accede al registro de tus empleados de forma, facil, rapida y sobre
+                              <p class="description">Accede al registro de tus empleados de forma, fácil, rápida y sobre
                                 todo
                                 eficiente</p>
                             </div>
@@ -223,7 +223,7 @@
                               <h4 class="title"><a
                                   href="../Empleados/crearEmpleado.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>">Agregar
                                   un Nuevo Empleado</a></h4>
-                              <p class="description">¡Tu compañia cada dìa crece màs! ingresa la informaciòn del nuevo
+                              <p class="description">¡Tu compañía cada día crece más! Ingresa la información del nuevo
                                 integrante de tu grupo de empleados</p>
                             </div>
                           </div>
@@ -235,7 +235,7 @@
                               <h4 class="title"><a
                                   href="../Cargos/TablaCargos.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>">Cargos</a>
                               </h4>
-                              <p class="description">Accede a la informaciòn de los distintos cargos con los que cuenta
+                              <p class="description">Accede a la información de los distintos cargos con los que cuenta
                                 tu
                                 empresa</p>
                             </div>
@@ -261,7 +261,7 @@
                       <div class="container">
 
                         <header class="section-header">
-                          <h3 class="section-title">Galeria de Infografias</h3>
+                          <h3 class="section-title">Galería de Infografías</h3>
                         </header>
 
                         <div class="row">

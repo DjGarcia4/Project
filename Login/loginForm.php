@@ -45,7 +45,7 @@
                     <li><a href="../menu/Modulos.php">Módulos o Servicios</a></li>
                     </li>
                     <li><a href="../menu/about-us.php">Sobre Nosotros</a></li>
-                    <li><a href="../menu/contact.php">Contactanos</a></li>
+                    <li><a href="../menu/contact.php">Contáctanos</a></li>
                   </ul>
                 </div>
                 <!-- Nav End -->
@@ -119,7 +119,7 @@
             <input class="input" type="password" placeholder="Contraseña" name="Contrasenia" required>
           </div>
           <br></br>
-          <input name="submit" class="btn" type="submit" value="Iniciar Sesion ">
+          <input name="submit" class="btn" type="submit" value="Iniciar Sesión ">
           <br></br>
           <a class="small" href="../restablecerContra.php">¿Has olvidado tu contraseña?</a>
         </form>
