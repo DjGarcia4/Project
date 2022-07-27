@@ -40,7 +40,7 @@
   <div id="wrapper">
 
     <!-- barra lateral -->
-    <?php include "../SqlTools/serviceMenu.php"; ?>
+    <?php include "../SqlTools/serviceMenuFilter.php"; ?>
     <!-- Fin de la barra lateral -->
 
 
