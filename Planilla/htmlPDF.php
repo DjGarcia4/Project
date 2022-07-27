@@ -10,8 +10,8 @@ $html = $_POST['rolex'];
 $empresa = $_POST['empresa'];
 $planilla = $_POST['planilla'];
 
-$name = 'planilla' . $planilla . ' Empresa' . $empresa;
-$url = 'C:/Planillas/planilla' . $planilla . ' Empresa' . $empresa . '.pdf';
+$db->select("empresas", "*", "idEmpresa = $empresa");
+$ex = mysqli_fetch_assoc($db->sql);
 
 $Object = new DateTime();
 $Object->setTimezone(new DateTimeZone('America/El_Salvador'));
@@ -33,8 +33,11 @@ if ($empresa == 1) {
   $mpdf->WriteHTML($html);
   $mpdf->SetHTMLFooter('<img src="../img/Footer.png" /> Pag. {PAGENO} de {nb}');
 
+  if (!file_exists("C:\Planillas\Dulces Willy Wonka")) {
+    mkdir('C:\Planillas\Dulces Willy Wonka', 0777, true);
+  }
 
-  $mpdf->Output('C:\Planillas\planilla' . $planilla . ' Empresa' . $empresa . '.pdf', 'F');
+  $mpdf->Output('C:\Planillas\Dulces Willy Wonka\Planilla Numero ' . $planilla . ' ' . $ex['Nombre'] . '.pdf', 'F');
 
   $db->insert('registros', [
     'id_Planilla' => $planilla,
@@ -52,8 +55,12 @@ if ($empresa == 1) {
   $mpdf->WriteHTML($html);
   $mpdf->SetHTMLFooter('<img src="../img/Footer.png" /> Pag. {PAGENO} de {nb}');
 
+  if (!file_exists("C:\Planillas\ArmasCOD")) {
+    mkdir('C:\Planillas\ArmasCOD', 0777, true);
+  }
 
-  $mpdf->Output('C:\Planillas\planilla' . $planilla . ' Empresa' . $empresa . '.pdf', 'F');
+  $mpdf->Output('C:\Planillas\ArmasCOD\Planilla Numero ' . $planilla . ' ' . $ex['Nombre'] . '.pdf', 'F');
+
 
   $db->insert('registros', [
     'id_Planilla' => $planilla,
