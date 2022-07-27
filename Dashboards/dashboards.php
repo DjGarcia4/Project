@@ -70,104 +70,21 @@
   <!-- Envoltura de pagina -->
   <div id="wrapper">
 
-    <!-- barra lateral -->
     <?php include "../SqlTools/serviceMenu.php"; ?>
-    <!-- Fin de la barra lateral -->
 
-    <!-- Envoltorio de contenido -->
-    <div id="content-wrapper" class="d-flex flex-column">
-
-      <!-- Main contenido -->
-      <div id="content">
-
-        <!-- Barra superior -->
-        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-          <!-- Alternar barra lateral (barra superior) -->
-          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-            <i class="fa fa-bars"></i>
-          </button>
-
-          <!-- Barra superior Navbar -->
-          <ul class="navbar-nav ml-auto">
-            <div class="topbar-divider d-none d-sm-block"></div>
-            <!-- Nav Item - Información del usuario -->
-            <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $name['Usuario']; ?></span>
-                <img class="img-profile rounded-circle" src="../img/undraw_profile.svg">
-              </a>
-              <!-- Desplegable - Información del usuario -->
-              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <!-- <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Perfil
-                                </a> -->
-                <a class="dropdown-item" href="../Login/cambioContra.php?idUsuario=<?php echo $Usuario; ?>&Empresas_idEmpresas=<?php echo $Empresa; ?>">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-replace" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <rect x="3" y="3" width="6" height="6" rx="1" />
-                    <rect x="15" y="15" width="6" height="6" rx="1" />
-                    <path d="M21 11v-3a2 2 0 0 0 -2 -2h-6l3 3m0 -6l-3 3" />
-                    <path d="M3 13v3a2 2 0 0 0 2 2h6l-3 -3m0 6l3 -3" />
-                  </svg>
-                  Cambio de contraseña
-                </a>
-                <a class="dropdown-item" href="../Usuarios/formUsuarios.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>&action=1">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-plus" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <circle cx="9" cy="7" r="4" />
-                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                    <path d="M16 11h6m-3 -3v6" />
-                  </svg>
-                  Crear Usuario
-                </a>
-                <a class="dropdown-item" href="../Usuarios/TablaUsuarios.php?idUsuario=<?php echo $Usuario; ?>&Empresas_idEmpresas=<?php echo $Empresa; ?>">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <circle cx="9" cy="7" r="4" />
-                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
-                  </svg>
-                  Mostrar usuarios
-                </a>
-                <!-- <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Actividad
-                                </a> -->
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-door-enter" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M13 12v.01" />
-                    <path d="M3 21h18" />
-                    <path d="M5 21v-16a2 2 0 0 1 2 -2h6m4 10.5v7.5" />
-                    <path d="M21 7h-7m3 -3l-3 3l3 3" />
-                  </svg>
-                  Cerrar Sesión
-                </a>
-              </div>
-            </li>
-
-          </ul>
-
-        </nav>
-        <!-- Fin de la barra superior -->
-
-        <!-- Contenido de la página de inicio -->
-        <div class="container-fluid">
-          <h1 class="h3 mb-1 text-gray-800">Dashboard</h1>
-        </div>
-
-        <div id="chartPosition" style="position: sticky; width: 90%; height: 50%; margin-bottom: 5%; margin-left: 5%; margin-right: 5%; border: black 1px solid;"></div>
-        <div id="PieChartEmp" style="position: sticky; width: 40%; height: 30%; margin-bottom: 5%; margin-left: 5%; margin-right: 5%; border: black 1px solid;"></div>
-        <div id="sexChart" style="position: sticky; width: 40%; height: 30%; margin-bottom: 5%; margin-left: 5%; margin-right: 5%; border: black 1px solid;"></div>
-
-      </div>
-
+    <!-- Contenido de la página de inicio -->
+    <div class="container-fluid">
+      <h1 class="h3 mb-1 text-gray-800">Dashboard</h1>
     </div>
-    <!-- Envoltorio de fin de contenido -->
+
+    <div id="chartPosition" style="position: sticky; width: 90%; height: 50%; margin-bottom: 5%; margin-left: 5%; margin-right: 5%; border: black 1px solid;"></div>
+    <div id="PieChartEmp" style="position: sticky; width: 40%; height: 30%; margin-bottom: 5%; margin-left: 5%; margin-right: 5%; border: black 1px solid;"></div>
+    <div id="sexChart" style="position: sticky; width: 40%; height: 30%; margin-bottom: 5%; margin-left: 5%; margin-right: 5%; border: black 1px solid;"></div>
+
+  </div>
+
+  </div>
+  <!-- Envoltorio de fin de contenido -->
 
   </div>
   <!-- Envoltorio de fin de página -->

@@ -40,7 +40,7 @@
   <div id="wrapper">
 
     <!-- barra lateral -->
-    <?php include "../SqlTools/serviceMenu.php"; ?>
+    <?php include "../SqlTools/serviceMenuFilter.php"; ?>
     <!-- Fin de la barra lateral -->
 
 
@@ -109,7 +109,7 @@
                                     Perfil
                                 </a> -->
                 <a class="dropdown-item"
-                  href="../Login/cambioContra.php?idUsuario=<?php echo $Usuario; ?>&Empresas_idEmpresas=<?php echo $Empresa; ?>">
+                  href="../Usuarios/formUsuarios.php?idUsuario=<?php echo $Usuario; ?>&Usuario=<?php echo $Usuario; ?>&Empresas_idEmpresas=<?php echo $Empresa; ?>&action=2">
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-replace" width="16"
                     height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none"
                     stroke-linecap="round" stroke-linejoin="round">
@@ -119,7 +119,7 @@
                     <path d="M21 11v-3a2 2 0 0 0 -2 -2h-6l3 3m0 -6l-3 3" />
                     <path d="M3 13v3a2 2 0 0 0 2 2h6l-3 -3m0 6l3 -3" />
                   </svg>
-                  Cambio de contraseña
+                  Modificar Usuario
                 </a>
                 <a class="dropdown-item"
                   href="../Usuarios/formUsuarios.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>&action=1">
