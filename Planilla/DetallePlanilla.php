@@ -39,153 +39,90 @@
   <!-- Envoltura de páginar -->
   <div id="wrapper">
 
-    <!-- barra lateral -->
-    <?php include "../SqlTools/serviceMenu.php";?>
-    <!-- Fin de la barra lateral -->
+    <?php include "../SqlTools/serviceMenu.php"; ?>
 
+    <!-- Contenido de la página de inicio -->
+    <div class="container-fluid">
 
-    <!-- Envoltorio de contenido -->
-    <div id="content-wrapper" class="d-flex flex-column">
+      <!-- Encabezado de página -->
+      <h1 class="h3 mb-2 text-gray-800">Planilla de Pagos</h1>
 
-      <!-- Main contenido -->
-      <div id="content">
+      <div>
+        <button class="btn btn-danger btn-sm" id="btnExportarPDF">PDF</button>
+        <button class="btn btn-success btn-sm" id="btnExportar" onclick="exceller()">Excel</button>
+      </div>
 
-        <!-- Barra superior -->
-        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-          <!-- Alternar barra lateral (barra superior) -->
-          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-            <i class="fa fa-bars"></i>
-          </button>
-
-          <!-- Barra superior Navbar -->
-          <ul class="navbar-nav ml-auto">
-
-            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-            <li class="nav-item dropdown no-arrow d-sm-none">
-              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-search fa-fw"></i>
-              </a>
-
-            </li>
-
-            <div class="topbar-divider d-none d-sm-block"></div>
-
-            <!-- Nav Item - Información del usuario -->
-            <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $name['Usuario'] ?></span>
-                <img class="img-profile rounded-circle" src="../img/undraw_profile.svg">
-              </a>
-              <!-- Desplegable - Información del usuario -->
-              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <!-- <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Perfil
-                                </a> -->
-                <a class="dropdown-item" href="../Login/cambioContra.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>">
-                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Cambio de contraseña
-                </a>
-                <!-- <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Actividad
-                                </a> -->
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Cerrar Sesión
-                </a>
-              </div>
-            </li>
-
-          </ul>
-
-        </nav>
-        <!-- Fin de la barra superior -->
-
-        <!-- Contenido de la página de inicio -->
-        <div class="container-fluid">
-
-          <!-- Encabezado de página -->
-          <h1 class="h3 mb-2 text-gray-800">Planilla de Pagos</h1>
-
-          <div>
-            <button class="btn btn-danger btn-sm" id="btnExportarPDF">PDF</button>
-            <button class="btn btn-success btn-sm" id="btnExportar" onclick="exceller()">Excel</button>
-          </div>
-
-          <!-- Tablas-->
-          <div class="card shadow mb-4">
-            <div class="table-body">
-              <div class="table-responsive" id="pdfDiv">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>id</th>
-                      <th>Nombre</th>
-                      <th>Salario</th>
-                      <th>IHSS</th>
-                      <th>RAP</th>
-                      <th>ISR</th>
-                      <th>Deducciones</th>
-                      <th>DecimoCuarto</th>
-                      <th>DecimoTercero</th>
-                      <th>Bonificaciones</th>
-                      <th>Sueldo Neto</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <?php
-                    $grid->specialSelect("SELECT idEmpleados,concat(PrimerNombre, ' ', PrimerApellido) as Nombre,
+      <!-- Tablas-->
+      <div class="card shadow mb-4">
+        <div class="table-body">
+          <div class="table-responsive" id="pdfDiv">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>id</th>
+                  <th>Nombre</th>
+                  <th>Salario</th>
+                  <th>IHSS</th>
+                  <th>RAP</th>
+                  <th>ISR</th>
+                  <th>Deducciones</th>
+                  <th>DecimoCuarto</th>
+                  <th>DecimoTercero</th>
+                  <th>Bonificaciones</th>
+                  <th>Sueldo Neto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php
+                $grid->specialSelect("SELECT idEmpleados,concat(PrimerNombre, ' ', PrimerApellido) as Nombre,
                                   Salario,IHSS,RAP,ISR,Total_Deducciones,14vo,13vo,Total_Bonificaciones,Sueldo_Neto
                                   FROM sistema_planilla.empleados 
                                   inner join sistema_planilla.cargos on sistema_planilla.cargos.idCargo = sistema_planilla.empleados.Cargos_idCargos
                                   inner join sistema_planilla.detalleplanillas on sistema_planilla.detalleplanillas.Empleados_idEmpleados = sistema_planilla.empleados.idEmpleados
                                   where Planillas_idPlanilla = $idPlanillas
                                   order by 	idEmpleados;");
-                    $table = $grid->sql;
-                    ?>
+                $table = $grid->sql;
+                ?>
 
-                    <?php while ($row = mysqli_fetch_assoc($table)) { ?>
+                <?php while ($row = mysqli_fetch_assoc($table)) { ?>
 
-                      <tr>
-                        <td><?php echo $row['idEmpleados']; ?></td>
-                        <td><?php echo $row['Nombre']; ?></td>
-                        <td><?php echo $row['Salario']; ?></td>
-                        <td><?php echo $row['IHSS']; ?></td>
-                        <td><?php echo $row['RAP']; ?></td>
-                        <td><?php echo $row['ISR']; ?></td>
-                        <td><?php echo $row['Total_Deducciones']; ?></td>
-                        <td><?php echo $row['14vo']; ?></td>
-                        <td><?php echo $row['13vo']; ?></td>
-                        <td><?php echo $row['Total_Bonificaciones']; ?></td>
-                        <td><?php echo $row['Sueldo_Neto']; ?></td>
-                      </tr>
-                    <?php } ?>
+                  <tr>
+                    <td><?php echo $row['idEmpleados']; ?></td>
+                    <td><?php echo $row['Nombre']; ?></td>
+                    <td><?php echo $row['Salario']; ?></td>
+                    <td><?php echo $row['IHSS']; ?></td>
+                    <td><?php echo $row['RAP']; ?></td>
+                    <td><?php echo $row['ISR']; ?></td>
+                    <td><?php echo $row['Total_Deducciones']; ?></td>
+                    <td><?php echo $row['14vo']; ?></td>
+                    <td><?php echo $row['13vo']; ?></td>
+                    <td><?php echo $row['Total_Bonificaciones']; ?></td>
+                    <td><?php echo $row['Sueldo_Neto']; ?></td>
+                  </tr>
+                <?php } ?>
 
-                  </tbody>
-                </table>
-              </div>
-            </div>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
-
-      <!-- /.container-fluid -->
-      <!-- Fin del contenido principal -->
-      <!-- Footer -->
-      <footer class="sticky-footer bg-white">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Bandersnatch 2022 </span>
-          </div>
-        </div>
-      </footer>
-      <!-- Fin del Footer -->
-
     </div>
-    <!-- Envoltorio de fin de contenido -->
+  </div>
+
+  <!-- /.container-fluid -->
+  <!-- Fin del contenido principal -->
+  <!-- Footer -->
+  <footer class="sticky-footer bg-white">
+    <div class="container my-auto">
+      <div class="copyright text-center my-auto">
+        <span>Copyright &copy; Bandersnatch 2022 </span>
+      </div>
+    </div>
+  </footer>
+  <!-- Fin del Footer -->
+
+  </div>
+  <!-- Envoltorio de fin de contenido -->
 
   </div>
   <!-- Envoltorio de fin de página -->
