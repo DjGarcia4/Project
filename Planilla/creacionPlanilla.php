@@ -38,7 +38,9 @@
   <div id="wrapper">
 
     <?php include "../SqlTools/serviceMenu.php"; ?>
-
+    <div class="container-fluid">
+      <h1 class="h3 mb-1 text-gray-800">Creación de Planilla</h1>
+    </div>
     <!-- Fin de la barra superior -->
     <div class="container">
       <div class="row justify-content-center">
@@ -99,8 +101,7 @@
                     </div>
                     <!--Cancelar-->
                     <div class="formulario__grupo formulario__grupo-btn-enviar">
-                      <div class="col-sm-6 mb-3 mb-sm-0"
-                        style="display:flex; width: 50vw; margin-left : 10vw; padding:10px;">
+                      <div style="display:flex;  padding:10px;">
                         <a title="Click si no desea hacer ni una acción"
                           href="historialPlanillas.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>"
                           class="btn btn-primary btn-user btn-block">
