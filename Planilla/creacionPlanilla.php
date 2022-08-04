@@ -12,7 +12,9 @@
   <title>Creación de Planilla</title>
   <!-- FUENTES-->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
 
   <!-- CSS-->
   <link href="../css/estilo.css" rel="stylesheet">
@@ -47,7 +49,7 @@
               <div class="">
                 <div class="p-5">
                   <!-- Inicio de Form -->
-                  <form action="SQLInsert_Planilla.php" class="user" method="post">
+                  <form action="SQLInsert_Planilla.php" class="formulario" method="post">
                     <input type="hidden" name="Usuario" value="<?php echo $Usuario; ?>">
                     <input type="hidden" name="Empresa" value="<?php echo $Empresa; ?>">
                     <!--Fecha Inicio-->
@@ -57,7 +59,8 @@
                           Fecha de Inicio
                         </div>
                         <div class="form-group">
-                          <input type="date" name="FechaInicio" id="FechaInicio" class="form-control form-control-user" placeholder="" required>
+                          <input type="date" name="FechaInicio" id="FechaInicio" class="form-control form-control-user"
+                            placeholder="" required>
                         </div>
                       </div>
 
@@ -67,7 +70,8 @@
                           Fecha Fin
                         </div>
                         <div class="form-group">
-                          <input type="date" name="FechaFin" id="FechaFin" class="form-control form-control-user" placeholder="" required>
+                          <input type="date" name="FechaFin" id="FechaFin" class="form-control form-control-user"
+                            placeholder="" required>
                         </div>
                       </div>
                     </div>
@@ -77,26 +81,32 @@
                       Número Planilla
                     </div>
                     <div class="form-group">
-                      <input type="" name="NumeroPlanilla" id="NumeroPlanilla" class="form-control form-control-user" placeholder="" value="<?php if (isset($row)) {
+                      <input type="" name="NumeroPlanilla" id="NumeroPlanilla" class="form-control form-control-user"
+                        placeholder=""
+                        value="<?php if (isset($row)) {
                                                                                                                                               echo $row['Correo'];
-                                                                                                                                            } ?>" required>
+                                                                                                                                            } ?>"
+                        required>
                     </div>
+                    <!--Grupo: Botones-->
 
                     <!--Submit-->
-                    <div class="form-group row" style=" width: 50vw; margin-left : 7vw;">
-                      <div class="col-sm-6 mb-3 mb-sm-0">
-                        <input type="submit" class="btn btn-primary btn-user btn-block" name="submit" value="Crear">
-                      </div>
-                      <!--Limpiar-->
-                      <div class="col-sm-6 mb-3 mb-sm-0">
-                        <input type="Reset" class="btn btn-primary btn-user btn-block" value="Limpiar">
+                    <div class="formulario__grupo" style="display: flex; gap:10px;">
+                      <input type="submit" class="btn btn-primary btn-user btn-block" name="submit"
+                        title="Click si el formulario esta listo para guardar" value="Crear">
+                      <input type="Reset" class="btn btn-primary btn-user btn-block" style="margin:auto;"
+                        title="Click si desea limpiar todos los campos" value="Limpiar">
+                    </div>
+                    <!--Cancelar-->
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                      <div class="col-sm-6 mb-3 mb-sm-0"
+                        style="display:flex; width: 50vw; margin-left : 10vw; padding:10px;">
+                        <a title="Click si no desea hacer ni una acción"
+                          href="historialPlanillas.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>"
+                          class="btn btn-primary btn-user btn-block">
+                          Regresar
                         </a>
                       </div>
-                    </div>
-                    <div class="col-sm-6 mb-3 mb-sm-0" style=" width: 50vw; margin-left : 16vw;">
-                      <a href="historialPlanillas.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>" class="btn btn-primary btn-user btn-block">
-                        Regresar
-                      </a>
                     </div>
                   </form>
                 </div>
@@ -130,7 +140,8 @@
   </a>
 
   <!-- Cierre de sesión modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -170,35 +181,35 @@
 </html>
 
 <script>
-  function formatDate(date) {
-    var d = new Date(date),
-      month = '' + (d.getMonth() + 1),
-      day = '' + d.getDate(),
-      year = d.getFullYear();
+function formatDate(date) {
+  var d = new Date(date),
+    month = '' + (d.getMonth() + 1),
+    day = '' + d.getDate(),
+    year = d.getFullYear();
 
-    if (month.length < 2) month = '0' + month;
-    if (day.length < 2) day = '0' + day;
+  if (month.length < 2) month = '0' + month;
+  if (day.length < 2) day = '0' + day;
 
-    return [year, month, day].join('-');
-  }
+  return [year, month, day].join('-');
+}
 
-  function name(date) {
-    var d = new Date(date),
-      month = '' + (d.getMonth() + 1),
-      day = '' + d.getDate(),
-      year = d.getFullYear();
+function name(date) {
+  var d = new Date(date),
+    month = '' + (d.getMonth() + 1),
+    day = '' + d.getDate(),
+    year = d.getFullYear();
 
-    if (month.length < 2) month = '0' + month;
-    if (day.length < 2) day = '0' + day;
+  if (month.length < 2) month = '0' + month;
+  if (day.length < 2) day = '0' + day;
 
-    return [year, month, day].join('');
-  }
+  return [year, month, day].join('');
+}
 
-  $("#FechaInicio").on("change", function() {
-    var fecha = new Date($("#FechaInicio").val());
-    var nombreP = new Date($("#FechaInicio").val());
-    fecha.setDate(fecha.getDate() + 30);
-    $("#FechaFin").val(formatDate(fecha));
-    $("#NumeroPlanilla").val(name(nombreP) + name(fecha) + <?php echo $Empresa ?>);
-  });
+$("#FechaInicio").on("change", function() {
+  var fecha = new Date($("#FechaInicio").val());
+  var nombreP = new Date($("#FechaInicio").val());
+  fecha.setDate(fecha.getDate() + 30);
+  $("#FechaFin").val(formatDate(fecha));
+  $("#NumeroPlanilla").val(name(nombreP) + name(fecha) + <?php echo $Empresa ?>);
+});
 </script>
