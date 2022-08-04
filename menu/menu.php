@@ -15,9 +15,12 @@
   <title>Planilla de Pagos</title>
   <!-- FUENTES-->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+    rel="stylesheet">
 
   <!-- Libraries CSS Files -->
   <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -87,7 +90,8 @@
                       <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
                         <div class="box">
                           <div class="icon"><i class="ion-ios-paper-outline" style="color: #c5793ae0;;"></i></div>
-                          <h4 class="title"><a href="../Planilla/historialPlanillas.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>">Planillas
+                          <h4 class="title"><a
+                              href="../Planilla/historialPlanillas.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>">Planillas
                               de pago</a></h4>
                           <p class="description"> Accede al registro almacenado de tus planillas de pago. </p>
                         </div>
@@ -95,7 +99,8 @@
                       <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
                         <div class="box">
                           <div class="icon"><i class="ion-ios-paper-outline" style="color: #e9bf06;"></i></div>
-                          <h4 class="title"><a href="../Planilla/creacionPlanilla.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>">Crear
+                          <h4 class="title"><a
+                              href="../Planilla/creacionPlanilla.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>">Crear
                               Nueva Planilla</a></h4>
                           <p class="description">Generar una nueva planilla de pago es mucho más fácil de lo que te
                             imaginas
@@ -103,10 +108,12 @@
                         </div>
                       </div>
 
-                      <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                      <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s"
+                        data-wow-duration="1.4s">
                         <div class="box">
                           <div class="icon"><i class="ion-man" style="color: #c5793ae0;"></i></div>
-                          <h4 class="title"><a href="../Empleados/tablas.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>">Empleados</a>
+                          <h4 class="title"><a
+                              href="../Empleados/tablas.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>">Empleados</a>
                           </h4>
                           <p class="description">Accede al registro de tus empleados de forma, fácil, rápida y sobre
                             todo
@@ -116,17 +123,20 @@
                       <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
                         <div class="box">
                           <div class="icon"><i class="ion-woman" style="color:#c5793ae0;"></i></div>
-                          <h4 class="title"><a href="../Empleados/crearEmpleado.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>">Agregar
+                          <h4 class="title"><a
+                              href="../Empleados/crearEmpleado.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>">Agregar
                               un Nuevo Empleado</a></h4>
                           <p class="description">¡Tu compañía cada día crece más! Ingresa la información del nuevo
                             integrante de tu grupo de empleados</p>
                         </div>
                       </div>
 
-                      <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+                      <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.2s"
+                        data-wow-duration="1.4s">
                         <div class="box">
                           <div class="icon"><i class="ion-more" style="color: #c5793ae0;"></i></div>
-                          <h4 class="title"><a href="../Cargos/TablaCargos.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>">Cargos</a>
+                          <h4 class="title"><a
+                              href="../Cargos/TablaCargos.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>">Cargos</a>
                           </h4>
                           <p class="description">Accede a la información de los distintos cargos con los que cuenta
                             tu
@@ -136,7 +146,8 @@
                       <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
                         <div class="box">
                           <div class="icon"><i class="ion-location" style="color: #c5793ae0;"></i></div>
-                          <h4 class="title"><a href="../Ciudades/TablaCiudades.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>">Ciudades</a>
+                          <h4 class="title"><a
+                              href="../Ciudades/TablaCiudades.php?idUsuario=<?php echo $Usuario ?>&Empresas_idEmpresas=<?php echo $Empresa ?>">Ciudades</a>
                           </h4>
                           <p class="description">Tu empresa genera funtes de ingresos para familias de Honduras,
                             explora las
@@ -162,7 +173,7 @@
                           <li data-filter="*" class="filter-active">Todo</li>
                           <li data-filter=".filter-plantilla">Planillas</li>
                           <li data-filter=".filter-empleados">Empleados</li>
-                          <li data-filter=".filter-contraseña">Recuperar Contraseña</li>
+                          <li data-filter=".filter-contraseña">Crear Usuario</li>
                         </ul>
                       </div>
                     </div>
@@ -176,7 +187,8 @@
                             <h4>Crear una nueva planilla 1</h4>
                             <p>Ver</p>
                             <div>
-                              <a href="../img/imgi/portfolio/planilla1.png" data-lightbox="portfolio" data-title="COPAP" class="link-preview" title="COPAP"><i class="ion ion-eye"></i></a>
+                              <a href="../img/imgi/portfolio/planilla1.png" data-lightbox="portfolio" data-title="COPAP"
+                                class="link-preview" title="COPAP"><i class="ion ion-eye"></i></a>
                             </div>
                           </div>
                         </div>
@@ -189,7 +201,9 @@
                             <h4>Crear una nueva planilla 2</h4>
                             <p>Ver</p>
                             <div>
-                              <a href="../img/imgi/portfolio/planilla2.png" class="link-preview" data-lightbox="portfolio" data-title="COPAP" title="COPAP"><i class="ion ion-eye"></i></a>
+                              <a href="../img/imgi/portfolio/planilla2.png" class="link-preview"
+                                data-lightbox="portfolio" data-title="COPAP" title="COPAP"><i
+                                  class="ion ion-eye"></i></a>
                             </div>
                           </div>
                         </div>
@@ -202,7 +216,9 @@
                             <h4>Razones para usar COPAP</h4>
                             <p>Ver</p>
                             <div>
-                              <a href="../img/imgi/portfolio/planillas4.png" class="link-preview" data-lightbox="portfolio" data-title="COPAP" title="COPAP"><i class="ion ion-eye"></i></a>
+                              <a href="../img/imgi/portfolio/planillas4.png" class="link-preview"
+                                data-lightbox="portfolio" data-title="COPAP" title="COPAP"><i
+                                  class="ion ion-eye"></i></a>
 
                             </div>
                           </div>
@@ -216,7 +232,9 @@
                             <h4>Crear una nueva planilla 3</h4>
                             <p>Ver</p>
                             <div>
-                              <a href="../img/imgi/portfolio/planilla3.png" class="link-preview" data-lightbox="portfolio" data-title="COPAP" title="COPAP"><i class="ion ion-eye"></i></a>
+                              <a href="../img/imgi/portfolio/planilla3.png" class="link-preview"
+                                data-lightbox="portfolio" data-title="COPAP" title="COPAP"><i
+                                  class="ion ion-eye"></i></a>
                             </div>
                           </div>
                         </div>
@@ -229,7 +247,8 @@
                             <h4>Agregar un nuevo empleado 1</h4>
                             <p>Ver</p>
                             <div>
-                              <a href="../img/imgi/portfolio/anexo2.jpg" class="link-preview" data-lightbox="portfolio" data-title="COPAP" title="COPAP"><i class="ion ion-eye"></i></a>
+                              <a href="../img/imgi/portfolio/anexo2.jpg" class="link-preview" data-lightbox="portfolio"
+                                data-title="COPAP" title="COPAP"><i class="ion ion-eye"></i></a>
                             </div>
                           </div>
                         </div>
@@ -242,7 +261,8 @@
                             <h4>Consejos Utiles</h4>
                             <p>Ver</p>
                             <div>
-                              <a href="../img/imgi/portfolio/Emp1.png" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Empleados"><i class="ion ion-eye"></i></a>
+                              <a href="../img/imgi/portfolio/Emp1.png" class="link-preview" data-lightbox="portfolio"
+                                data-title="App 3" title="Empleados"><i class="ion ion-eye"></i></a>
                             </div>
                           </div>
                         </div>
@@ -252,10 +272,11 @@
                         <div class="portfolio-wrap">
                           <img src="../img/imgi/portfolio/C1.jpeg" class="img-fluid" alt="">
                           <div class="portfolio-info">
-                            <h4>Reestablcer Contraseña 1</h4>
+                            <h4>Crear Usuario 1</h4>
                             <p>Ver</p>
                             <div>
-                              <a href="../img/imgi/portfolio/anexo3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Contraseña" title="Preview"><i class="ion ion-eye"></i></a>
+                              <a href="../img/imgi/portfolio/4.png" class="link-preview" data-lightbox="portfolio"
+                                data-title="Contraseña" title="Preview"><i class="ion ion-eye"></i></a>
                             </div>
                           </div>
                         </div>
@@ -265,10 +286,26 @@
                         <div class="portfolio-wrap">
                           <img src="../img/imgi/portfolio/anexo1.jpg" class="img-fluid" alt="">
                           <div class="portfolio-info">
-                            <h4>Reestablcer Contraseña 2</h4>
+                            <h4>Crear Usuario 2</h4>
                             <p>Ver</p>
                             <div>
-                              <a href="../img/imgi/portfolio/anexo1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Contraseña" title="Preview"><i class="ion ion-eye"></i></a>
+                              <a href="../img/imgi/portfolio/5.png" class="link-preview" data-lightbox="portfolio"
+                                data-title="Contraseña" title="Preview"><i class="ion ion-eye"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-lg-4 col-md-6 portfolio-item filter-contraseña">
+                        <div class="portfolio-wrap">
+                          <img src="../img/imgi/portfolio/anexo3.jpg" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                            <h4>Crear Usuario 3</h4>
+                            <p>Ver</p>
+                            <div>
+                              <a href="../img/imgi/portfolio/6.png" class="link-preview" data-lightbox="portfolio"
+                                data-title="Contraseña" title="Preview"><i class="ion ion-eye"></i></a>
                             </div>
                           </div>
                         </div>
@@ -281,7 +318,8 @@
                             <h4>Mostrar Empleados</h4>
                             <p>Ver</p>
                             <div>
-                              <a href="../img/imgi/portfolio/anexo4.jpeg" class="link-preview" data-lightbox="portfolio" data-title="Empleados" title="Preview"><i class="ion ion-eye"></i></a>
+                              <a href="../img/imgi/portfolio/anexo4.jpeg" class="link-preview" data-lightbox="portfolio"
+                                data-title="Empleados" title="Preview"><i class="ion ion-eye"></i></a>
                             </div>
                           </div>
                         </div>
@@ -305,7 +343,8 @@
         </a>
 
         <!-- Cierre de sesión modal-->
-        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
